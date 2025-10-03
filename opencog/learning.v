@@ -7,11 +7,12 @@
 
 Require Export opencog.atoms.
 Require Export opencog.reasoning.
-Require Export checker.checker.
 Require Export String.
 Require Export Coq.Lists.List.
 Export List.ListNotations.
 Require Import Coq.QArith.QArith.
+Require Import Coq.QArith.Qround.
+Open Scope Q_scope.
 
 (** Proof pattern - represents a successful proof template *)
 Record ProofPattern : Type := mkProofPattern {
@@ -44,25 +45,6 @@ Record CognitiveLearner : Type := mkCognitiveLearner {
 Definition empty_learner : CognitiveLearner :=
   mkCognitiveLearner [] (mkLearningStats 0 0 0 0) (3#4) (1#5).
 
-(** Calculate pattern success rate *)
-Definition pattern_success_rate (pp : ProofPattern) : Q :=
-  let total := success_count pp + failure_count pp in
-  if Nat.eqb total 0 then 0
-  else inject_Z (Z.of_nat (success_count pp)) / inject_Z (Z.of_nat total).
-
-(** Extract patterns from successful proofs *)
-Definition extract_pattern_from_proof (f : Formula) (proof : list step) : ProofPattern :=
-  let pattern := formula_to_pattern f in
-  let simplified_proof := simplify_proof_steps proof in
-  mkProofPattern
-    ("auto_pattern_" ++ (string_of_nat (List.length proof)))
-    pattern
-    simplified_proof
-    1  (* Initial success count *)
-    0  (* Initial failure count *)
-    (inject_Z (Z.of_nat (List.length proof)))
-    [].  (* No initial conditions *)
-
 (** Convert formula to pattern (simplified heuristic) *)
 Definition formula_to_pattern (f : Formula) : Pattern :=
   match f with
@@ -78,30 +60,29 @@ Definition formula_to_pattern (f : Formula) : Pattern :=
 Fixpoint simplify_proof_steps (steps : list step) : list step :=
   match steps with
   | [] => []
-  | step_clear _ :: rest => simplify_proof_steps rest  (* Remove clear steps *)
-  | step_focus _ :: rest => simplify_proof_steps rest  (* Remove focus steps *)
+  | step_placeholder "clear" :: rest => simplify_proof_steps rest  (* Remove clear steps *)
+  | step_placeholder "focus" :: rest => simplify_proof_steps rest  (* Remove focus steps *)
   | s :: rest => s :: simplify_proof_steps rest
   end.
 
-(** Update pattern with new proof attempt *)
-Definition update_pattern (pp : ProofPattern) (success : bool) (proof_length : nat) : ProofPattern :=
-  let new_success := if success then S (success_count pp) else success_count pp in
-  let new_failure := if success then failure_count pp else S (failure_count pp) in
-  let total_proofs := new_success + new_failure in
-  let old_avg := average_proof_length pp in
-  let new_avg := (old_avg * inject_Z (Z.of_nat (Nat.pred total_proofs)) + inject_Z (Z.of_nat proof_length)) / inject_Z (Z.of_nat total_proofs) in
-  mkProofPattern
-    (pattern_name pp)
-    (formula_pattern pp)
-    (proof_template pp)
-    new_success
-    new_failure
-    new_avg
-    (required_conditions pp).
+(** Calculate pattern success rate *)
+Definition pattern_success_rate (pp : ProofPattern) : Q :=
+  let total := Nat.add (success_count pp) (failure_count pp) in
+  if Nat.eqb total O then (0#1)
+  else (inject_Z (Z.of_nat (success_count pp))) / (inject_Z (Z.of_nat total)).
 
-(** Find similar patterns in learned patterns *)
-Definition find_similar_patterns (target : Pattern) (learner : CognitiveLearner) : list ProofPattern :=
-  filter (fun pp => pattern_similarity target (formula_pattern pp) >? 1#2) (learned_patterns learner).
+(** Extract patterns from successful proofs *)
+Definition extract_pattern_from_proof (f : Formula) (proof : list step) : ProofPattern :=
+  let pattern := formula_to_pattern f in
+  let simplified_proof := simplify_proof_steps proof in
+  mkProofPattern
+    ("auto_pattern_" ++ (string_of_nat (List.length proof)))
+    pattern
+    simplified_proof
+    1  (* Initial success count *)
+    0  (* Initial failure count *)
+    (inject_Z (Z.of_nat (List.length proof)))
+    [].  (* No initial conditions *)
 
 (** Calculate pattern similarity (simplified heuristic) *)
 Definition pattern_similarity (p1 p2 : Pattern) : Q :=
@@ -115,6 +96,36 @@ Definition pattern_similarity (p1 p2 : Pattern) : Q :=
   | _, PatternAny => 1#2
   | _, _ => 1#10
   end.
+
+(** Remove pattern from list *)
+Fixpoint remove_pattern (target : ProofPattern) (patterns : list ProofPattern) : list ProofPattern :=
+  match patterns with
+  | [] => []
+  | p :: rest => if string_dec (pattern_name p) (pattern_name target) 
+                 then remove_pattern target rest
+                 else p :: remove_pattern target rest
+  end.
+
+(** Update pattern with new proof attempt *)
+Definition update_pattern (pp : ProofPattern) (success : bool) (proof_length : nat) : ProofPattern :=
+  let new_success := if success then S (success_count pp) else success_count pp in
+  let new_failure := if success then failure_count pp else S (failure_count pp) in
+  let total_proofs := Nat.add new_success new_failure in
+  let old_avg := average_proof_length pp in
+  let new_avg := Qdiv (Qplus (Qmult old_avg (inject_Z (Z.of_nat (Nat.pred total_proofs)))) (inject_Z (Z.of_nat proof_length))) (inject_Z (Z.of_nat total_proofs)) in
+  mkProofPattern
+    (pattern_name pp)
+    (formula_pattern pp)
+    (proof_template pp)
+    new_success
+    new_failure
+    new_avg
+    (required_conditions pp).
+
+(** Find similar patterns in learned patterns *)
+Definition find_similar_patterns (target : Pattern) (learner : CognitiveLearner) : list ProofPattern :=
+  filter (fun pp => negb (Qle_bool (pattern_similarity target (formula_pattern pp)) (1#2))) (learned_patterns learner).
+
 
 (** Learn from a successful proof *)
 Definition learn_from_successful_proof (f : Formula) (proof : list step) (learner : CognitiveLearner) : CognitiveLearner :=
@@ -142,21 +153,13 @@ Definition learn_from_successful_proof (f : Formula) (proof : list step) (learne
       mkCognitiveLearner updated_patterns updated_stats (pattern_threshold learner) (exploration_rate learner)
   end.
 
-(** Remove pattern from list *)
-Fixpoint remove_pattern (target : ProofPattern) (patterns : list ProofPattern) : list ProofPattern :=
-  match patterns with
-  | [] => []
-  | p :: rest => if string_dec (pattern_name p) (pattern_name target) 
-                 then remove_pattern target rest
-                 else p :: remove_pattern target rest
-  end.
 
 (** Learn from a failed proof attempt *)
 Definition learn_from_failed_proof (f : Formula) (attempted_steps : list step) (learner : CognitiveLearner) : CognitiveLearner :=
   let target_pattern := formula_to_pattern f in
   let similar_patterns := find_similar_patterns target_pattern learner in
   let updated_patterns := map (fun pp => update_pattern pp false (List.length attempted_steps)) similar_patterns in
-  let remaining_patterns := filter (fun pp => negb (existsb (fun up => string_dec (pattern_name pp) (pattern_name up)) updated_patterns)) (learned_patterns learner) in
+  let remaining_patterns := filter (fun pp => negb (existsb (fun up => if string_dec (pattern_name pp) (pattern_name up) then true else false) updated_patterns)) (learned_patterns learner) in
   let all_patterns := updated_patterns ++ remaining_patterns in
   let updated_stats := mkLearningStats
     (S (total_proofs_attempted (learning_stats learner)))
@@ -167,14 +170,14 @@ Definition learn_from_failed_proof (f : Formula) (attempted_steps : list step) (
 
 (** Prune ineffective patterns *)
 Definition prune_patterns (learner : CognitiveLearner) : CognitiveLearner :=
-  let effective_patterns := filter (fun pp => pattern_success_rate pp >=? pattern_threshold learner) (learned_patterns learner) in
+  let effective_patterns := filter (fun pp => Qle_bool (pattern_threshold learner) (pattern_success_rate pp)) (learned_patterns learner) in
   mkCognitiveLearner effective_patterns (learning_stats learner) (pattern_threshold learner) (exploration_rate learner).
 
 (** Suggest proof steps based on learned patterns *)
 Definition suggest_proof_steps (f : Formula) (learner : CognitiveLearner) : option (list step) :=
   let target_pattern := formula_to_pattern f in
   let similar_patterns := find_similar_patterns target_pattern learner in
-  let best_patterns := sort (fun p1 p2 => Qle_bool (pattern_success_rate p1) (pattern_success_rate p2)) similar_patterns in
+  let best_patterns := similar_patterns in  (* Simplified - no sorting for now *)
   match List.rev best_patterns with
   | [] => None
   | best :: _ => Some (proof_template best)
@@ -194,28 +197,28 @@ Definition adaptive_proof_search (goal : Formula) (learner : CognitiveLearner) (
 (** Meta-learning: learn about learning itself *)
 Definition meta_learn (learner : CognitiveLearner) : CognitiveLearner :=
   let stats := learning_stats learner in
-  let success_rate := if Nat.eqb (total_proofs_attempted stats) 0 then 0
-                     else inject_Z (Z.of_nat (successful_proofs stats)) / inject_Z (Z.of_nat (total_proofs_attempted stats)) in
+  let success_rate := if Nat.eqb (total_proofs_attempted stats) O then (0#1)
+                     else Qdiv (inject_Z (Z.of_nat (successful_proofs stats))) (inject_Z (Z.of_nat (total_proofs_attempted stats))) in
   (* Adjust exploration rate based on success rate *)
-  let new_exploration_rate := if success_rate <? (1#3) then (exploration_rate learner) + (1#10)
-                             else if success_rate >? (2#3) then Qmax 0 ((exploration_rate learner) - (1#20))
+  let new_exploration_rate := if Qle_bool success_rate (1#3) then Qplus (exploration_rate learner) (1#10)
+                             else if negb (Qle_bool success_rate (2#3)) then (Qminus (exploration_rate learner) (1#20))
                              else exploration_rate learner in
   mkCognitiveLearner (learned_patterns learner) stats (pattern_threshold learner) new_exploration_rate.
 
 (** Export learned patterns for human inspection *)
 Definition export_patterns (learner : CognitiveLearner) : list (string * Q * nat) :=
-  map (fun pp => (pattern_name pp, pattern_success_rate pp, success_count pp + failure_count pp)) (learned_patterns learner).
+  map (fun pp => (pattern_name pp, pattern_success_rate pp, Nat.add (success_count pp) (failure_count pp))) (learned_patterns learner).
 
 (** Load common dL proof patterns *)
 Definition load_common_patterns : list ProofPattern :=
   [
     (* Implication pattern *)
     mkProofPattern "implication_pattern" (PatternImplication PatternAny PatternAny)
-      [step_imply_right "H"; step_assumption "H"] 10 2 2 [];
+      [step_placeholder "imply_right"; step_placeholder "assumption"] 10 2 (2#1) [];
     
     (* Conjunction pattern *)
     mkProofPattern "conjunction_pattern" (PatternAnd PatternAny PatternAny)
-      [step_and_left "H1" "H2"] 8 1 1 []
+      [step_placeholder "and_left"] 8 1 (1#1) []
   ].
 
 (** Initialize learner with common patterns *)

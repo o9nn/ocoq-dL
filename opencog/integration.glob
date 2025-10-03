@@ -1,0 +1,40 @@
+DIGEST 91c6f1f7f17dea508ceb57f763f76db8
+Fopencog.integration
+R216:228 opencog.atoms <> <> lib
+R246:262 opencog.reasoning <> <> lib
+R280:295 opencog.learning <> <> lib
+R313:318 Coq.Strings.String <> <> lib
+R336:349 Coq.Lists.List <> <> lib
+R359:376 Coq.Lists.List ListNotations <> mod
+ind 421:431 <> proof_state
+constr 446:462 <> dummy_proof_state
+R466:476 opencog.integration <> proof_state:1 ind
+scheme 421:431 <> proof_state_rect
+scheme 421:431 <> proof_state_ind
+scheme 421:431 <> proof_state_rec
+scheme 421:431 <> proof_state_sind
+rec 545:565 <> CognitiveProofChecker
+proj 605:616 <> base_checker
+proj 680:698 <> cognitive_atomspace
+proj 724:730 <> learner
+proj 754:762 <> auto_mode
+R631:634 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R620:630 opencog.integration <> proof_state ind
+R644:647 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R635:638 Coq.Init.Datatypes <> list ind
+R640:643 opencog.reasoning <> step ind
+R702:719 opencog.reasoning <> CognitiveAtomspace rec
+R734:749 opencog.learning <> CognitiveLearner rec
+R766:769 Coq.Init.Datatypes <> bool ind
+def 884:903 <> proof_state_to_atoms
+R911:921 opencog.integration <> proof_state ind
+binder 906:907 <> ps:8
+R935:943 opencog.atoms <> Atomspace rec
+binder 925:931 <> as_base:9
+R948:956 opencog.atoms <> Atomspace rec
+R963:971 Coq.Lists.List <> fold_left def
+R1172:1178 opencog.integration <> as_base:9 var
+R1169:1170 opencog.integration <> ps:8 var
+binder 978:983 <> acc_as:10
+binder 985:987 <> seq:11
+R1002:1004 opencog.integration <> seq:11 var
