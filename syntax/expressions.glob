@@ -1,0 +1,294 @@
+DIGEST 1317286bfcbfd08dd0babf4a69213bfc
+Fsyntax.expressions
+R1000:1005 syntax.symbol <> <> lib
+R1023:1028 Coq.Strings.String <> <> lib
+R1046:1050 Coq.Reals.Reals <> <> lib
+R1068:1081 Coq.Lists.List <> <> lib
+R1091:1108 Coq.Lists.List ListNotations <> mod
+R1119:1124 Coq.Vectors.Vector <> <> lib
+ind 1635:1639 <> KTnum
+constr 1646:1651 <> KTNnat
+constr 1674:1680 <> KTNreal
+R1659:1661 Coq.Init.Datatypes <> nat ind
+binder 1655:1655 <> n:3
+R1666:1670 syntax.expressions <> KTnum:1 ind
+R1687:1687 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1683:1683 <> r:4
+R1694:1698 syntax.expressions <> KTnum:1 ind
+scheme 1635:1639 <> KTnum_rect
+scheme 1635:1639 <> KTnum_ind
+scheme 1635:1639 <> KTnum_rec
+scheme 1635:1639 <> KTnum_sind
+ind 1759:1762 <> Term
+constr 1776:1780 <> KTdot
+constr 1856:1863 <> KTfuncOf
+constr 2011:2018 <> KTnumber
+constr 2086:2091 <> KTread
+constr 2180:2184 <> KTneg
+constr 2258:2263 <> KTplus
+constr 2336:2342 <> KTminus
+constr 2414:2420 <> KTtimes
+constr 2492:2505 <> KTdifferential
+R1796:1798 Coq.Init.Datatypes <> nat ind
+binder 1792:1792 <> n:7
+R1815:1818 syntax.expressions <> Term:5 ind
+R1876:1889 syntax.symbol <> FunctionSymbol ind
+binder 1872:1872 <> f:8
+R1914:1916 Coq.Init.Datatypes <> nat ind
+binder 1910:1910 <> n:9
+R1941:1948 Coq.Vectors.Vector <> t ind
+R1950:1953 syntax.expressions <> Term:5 ind
+R1955:1955 syntax.expressions <> n:9 var
+binder 1937:1937 <> a:10
+R1960:1963 syntax.expressions <> Term:5 ind
+R2031:2035 syntax.expressions <> KTnum ind
+binder 2027:2027 <> r:11
+R2050:2053 syntax.expressions <> Term:5 ind
+R2108:2118 syntax.symbol <> KAssignable ind
+binder 2102:2104 <> var:12
+R2125:2128 syntax.expressions <> Term:5 ind
+R2204:2207 syntax.expressions <> Term:5 ind
+binder 2196:2200 <> child:13
+R2219:2222 syntax.expressions <> Term:5 ind
+R2287:2290 syntax.expressions <> Term:5 ind
+binder 2274:2277 <> left:14
+binder 2279:2283 <> right:15
+R2297:2300 syntax.expressions <> Term:5 ind
+R2365:2368 syntax.expressions <> Term:5 ind
+binder 2352:2355 <> left:16
+binder 2357:2361 <> right:17
+R2375:2378 syntax.expressions <> Term:5 ind
+R2443:2446 syntax.expressions <> Term:5 ind
+binder 2430:2433 <> left:18
+binder 2435:2439 <> right:19
+R2453:2456 syntax.expressions <> Term:5 ind
+R2516:2519 syntax.expressions <> Term:5 ind
+binder 2508:2512 <> child:20
+R2531:2534 syntax.expressions <> Term:5 ind
+scheme 1759:1762 <> Term_rect
+scheme 1759:1762 <> Term_ind
+scheme 1759:1762 <> Term_rec
+scheme 1759:1762 <> Term_sind
+R2571:2608 syntax.expressions <> KTread constr
+def 2623:2630 <> nat2term
+R2637:2639 Coq.Init.Datatypes <> nat ind
+binder 2633:2633 <> n:21
+R2644:2647 syntax.expressions <> Term ind
+R2652:2659 syntax.expressions <> KTnumber constr
+R2662:2667 syntax.expressions <> KTNnat constr
+R2669:2669 syntax.expressions <> n:21 var
+R2673:2704 syntax.expressions <> nat2term def
+def 2749:2751 <> DTD
+R2755:2758 syntax.expressions <> Term ind
+R2763:2767 syntax.expressions <> KTdot constr
+def 2783:2785 <> DTN
+R2789:2792 syntax.expressions <> Term ind
+ind 2829:2837 <> AtomicODE
+constr 2851:2858 <> ODEconst
+constr 2907:2913 <> ODEsing
+R2868:2875 syntax.symbol <> ODEConst ind
+binder 2861:2864 <> name:24
+R2880:2888 syntax.expressions <> AtomicODE:22 ind
+R2921:2931 syntax.symbol <> KAssignable ind
+binder 2916:2917 <> xp:25
+R2939:2942 syntax.expressions <> Term ind
+binder 2935:2935 <> e:26
+R2947:2955 syntax.expressions <> AtomicODE:22 ind
+scheme 2829:2837 <> AtomicODE_rect
+scheme 2829:2837 <> AtomicODE_ind
+scheme 2829:2837 <> AtomicODE_rec
+scheme 2829:2837 <> AtomicODE_sind
+ind 2994:2996 <> ODE
+constr 3010:3018 <> ODEatomic
+constr 3049:3055 <> ODEprod
+R3029:3037 syntax.expressions <> AtomicODE ind
+binder 3021:3025 <> child:29
+R3043:3045 syntax.expressions <> ODE:27 ind
+R3070:3072 syntax.expressions <> ODE:27 ind
+binder 3058:3061 <> left:30
+binder 3063:3066 <> righ:31
+R3082:3084 syntax.expressions <> ODE:27 ind
+scheme 2994:2996 <> ODE_rect
+scheme 2994:2996 <> ODE_ind
+scheme 2994:2996 <> ODE_rec
+scheme 2994:2996 <> ODE_sind
+R3101:3138 syntax.expressions <> ODEatomic constr
+ind 3202:3208 <> Formula
+constr 3222:3226 <> KFdot
+constr 3308:3313 <> KFtrue
+constr 3377:3383 <> KFfalse
+constr 3446:3452 <> KFequal
+constr 3515:3524 <> KFnotequal
+constr 3584:3597 <> KFgreaterEqual
+constr 3653:3661 <> KFgreater
+constr 3722:3732 <> KFlessEqual
+constr 3791:3796 <> KFless
+constr 3860:3867 <> KFpredOf
+constr 4108:4119 <> KFquantifier
+constr 4171:4175 <> KFnot
+constr 4253:4257 <> KFand
+constr 4339:4342 <> KFor
+constr 4425:4431 <> KFimply
+constr 4511:4517 <> KFequiv
+constr 4616:4627 <> KFforallVars
+constr 4719:4730 <> KFexistsVars
+constr 4843:4847 <> KFbox
+constr 4940:4948 <> KFdiamond
+ind 5098:5104 <> Program
+constr 5123:5132 <> KPconstant
+constr 5241:5248 <> KPassign
+constr 5348:5358 <> KPassignAny
+constr 5455:5460 <> KPtest
+constr 5550:5557 <> KPchoice
+constr 5652:5660 <> KPcompose
+constr 5754:5759 <> KPloop
+constr 5850:5860 <> KPodeSystem
+R3258:3264 syntax.expressions <> Formula:32 ind
+R3344:3350 syntax.expressions <> Formula:32 ind
+R3413:3419 syntax.expressions <> Formula:32 ind
+R3474:3477 syntax.expressions <> Term ind
+binder 3461:3464 <> left:36
+binder 3466:3470 <> right:37
+R3482:3488 syntax.expressions <> Formula:32 ind
+R3543:3546 syntax.expressions <> Term ind
+binder 3530:3533 <> left:38
+binder 3535:3539 <> right:39
+R3551:3557 syntax.expressions <> Formula:32 ind
+R3612:3615 syntax.expressions <> Term ind
+binder 3599:3602 <> left:40
+binder 3604:3608 <> right:41
+R3620:3626 syntax.expressions <> Formula:32 ind
+R3681:3684 syntax.expressions <> Term ind
+binder 3668:3671 <> left:42
+binder 3673:3677 <> right:43
+R3689:3695 syntax.expressions <> Formula:32 ind
+R3750:3753 syntax.expressions <> Term ind
+binder 3737:3740 <> left:44
+binder 3742:3746 <> right:45
+R3758:3764 syntax.expressions <> Formula:32 ind
+R3819:3822 syntax.expressions <> Term ind
+binder 3806:3809 <> left:46
+binder 3811:3815 <> right:47
+R3827:3833 syntax.expressions <> Formula:32 ind
+R3879:3893 syntax.symbol <> PredicateSymbol ind
+binder 3875:3875 <> f:48
+R3917:3919 Coq.Init.Datatypes <> nat ind
+binder 3913:3913 <> n:49
+R3943:3950 Coq.Vectors.Vector <> t ind
+R3952:3955 syntax.expressions <> Term ind
+R3957:3957 syntax.expressions <> n:49 var
+binder 3939:3939 <> a:50
+R3977:3983 syntax.expressions <> Formula:32 ind
+R4127:4142 syntax.symbol <> QuantifierSymbol ind
+binder 4123:4123 <> f:51
+R4150:4156 syntax.expressions <> Formula:32 ind
+binder 4146:4146 <> a:52
+R4161:4167 syntax.expressions <> Formula:32 ind
+R4194:4200 syntax.expressions <> Formula:32 ind
+binder 4186:4190 <> child:53
+R4224:4230 syntax.expressions <> Formula:32 ind
+R4281:4287 syntax.expressions <> Formula:32 ind
+binder 4268:4271 <> left:54
+binder 4273:4277 <> right:55
+R4306:4312 syntax.expressions <> Formula:32 ind
+R4367:4373 syntax.expressions <> Formula:32 ind
+binder 4354:4357 <> left:56
+binder 4359:4363 <> right:57
+R4392:4398 syntax.expressions <> Formula:32 ind
+R4453:4459 syntax.expressions <> Formula:32 ind
+binder 4440:4443 <> left:58
+binder 4445:4449 <> right:59
+R4478:4484 syntax.expressions <> Formula:32 ind
+R4539:4545 syntax.expressions <> Formula:32 ind
+binder 4526:4529 <> left:60
+binder 4531:4535 <> right:61
+R4564:4570 syntax.expressions <> Formula:32 ind
+R4638:4641 Coq.Init.Datatypes <> list ind
+R4643:4651 syntax.symbol <> KVariable ind
+binder 4631:4634 <> vars:62
+R4663:4669 syntax.expressions <> Formula:32 ind
+binder 4655:4659 <> child:63
+R4677:4683 syntax.expressions <> Formula:32 ind
+R4741:4744 Coq.Init.Datatypes <> list ind
+R4746:4754 syntax.symbol <> KVariable ind
+binder 4734:4737 <> vars:64
+R4766:4772 syntax.expressions <> Formula:32 ind
+binder 4758:4762 <> child:65
+R4780:4786 syntax.expressions <> Formula:32 ind
+R4865:4871 syntax.expressions <> Program:33 ind
+binder 4858:4861 <> prog:66
+R4883:4889 syntax.expressions <> Formula:32 ind
+binder 4875:4879 <> child:67
+R4904:4910 syntax.expressions <> Formula:32 ind
+R4962:4968 syntax.expressions <> Program:33 ind
+binder 4955:4958 <> prog:68
+R4980:4986 syntax.expressions <> Formula:32 ind
+binder 4972:4976 <> child:69
+R5001:5007 syntax.expressions <> Formula:32 ind
+R5146:5161 syntax.symbol <> ProgramConstName ind
+binder 5139:5142 <> name:70
+R5181:5187 syntax.expressions <> Program:33 ind
+R5261:5271 syntax.symbol <> KAssignable ind
+binder 5257:5257 <> x:71
+R5279:5282 syntax.expressions <> Term ind
+binder 5275:5275 <> e:72
+R5299:5305 syntax.expressions <> Program:33 ind
+R5368:5378 syntax.symbol <> KAssignable ind
+binder 5364:5364 <> x:73
+R5406:5412 syntax.expressions <> Program:33 ind
+R5478:5484 syntax.expressions <> Formula:32 ind
+binder 5471:5474 <> cond:74
+R5513:5519 syntax.expressions <> Program:33 ind
+R5573:5579 syntax.expressions <> Program:33 ind
+binder 5566:5569 <> left:75
+R5590:5596 syntax.expressions <> Program:33 ind
+binder 5582:5586 <> right:76
+R5608:5614 syntax.expressions <> Program:33 ind
+R5675:5681 syntax.expressions <> Program:33 ind
+binder 5668:5671 <> left:77
+R5692:5698 syntax.expressions <> Program:33 ind
+binder 5684:5688 <> right:78
+R5710:5716 syntax.expressions <> Program:33 ind
+R5778:5784 syntax.expressions <> Program:33 ind
+binder 5770:5774 <> child:79
+R5812:5818 syntax.expressions <> Program:33 ind
+R5869:5871 syntax.expressions <> ODE ind
+binder 5863:5865 <> ode:80
+R5888:5894 syntax.expressions <> Formula:32 ind
+binder 5875:5884 <> constraint:81
+R5899:5905 syntax.expressions <> Program:33 ind
+scheme 3202:3208 <> Formula_rect
+scheme 3202:3208 <> Formula_ind
+scheme 3202:3208 <> Formula_rec
+scheme 3202:3208 <> Formula_sind
+scheme 5098:5104 <> Program_rect
+scheme 5098:5104 <> Program_ind
+scheme 5098:5104 <> Program_rec
+scheme 5098:5104 <> Program_sind
+def 6030:6042 <> Formula_ind_2
+def 6108:6120 <> Program_ind_2
+R6139:6145 syntax.expressions <> Program ind
+R6061:6067 syntax.expressions <> Formula ind
+R6204:6216 syntax.expressions <> Formula_ind_2 scheme
+R6219:6231 syntax.expressions <> Program_ind_2 scheme
+def 6242:6254 <> Formula_rec_2
+def 6320:6332 <> Program_rec_2
+R6351:6357 syntax.expressions <> Program ind
+R6273:6279 syntax.expressions <> Formula ind
+ind 6406:6415 <> Expression
+constr 6429:6432 <> term
+constr 6478:6484 <> program
+constr 6527:6533 <> formula
+R6443:6449 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6439:6442 syntax.expressions <> Term ind
+R6450:6459 syntax.expressions <> Expression:82 ind
+R6495:6498 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6488:6494 syntax.expressions <> Program ind
+R6499:6508 syntax.expressions <> Expression:82 ind
+R6544:6547 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6537:6543 syntax.expressions <> Formula ind
+R6548:6557 syntax.expressions <> Expression:82 ind
+scheme 6406:6415 <> Expression_rect
+scheme 6406:6415 <> Expression_ind
+scheme 6406:6415 <> Expression_rec
+scheme 6406:6415 <> Expression_sind

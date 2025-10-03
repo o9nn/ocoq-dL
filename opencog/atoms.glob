@@ -1,0 +1,544 @@
+DIGEST dce13b89d131250eb8164e111f702ed0
+Fopencog.atoms
+R283:295 syntax.symbol <> <> lib
+R313:330 syntax.expressions <> <> lib
+R348:353 Coq.Strings.String <> <> lib
+R371:384 Coq.Lists.List <> <> lib
+R394:411 Coq.Lists.List ListNotations <> mod
+R429:445 Coq.QArith.QArith <> <> lib
+R463:480 Coq.QArith.Qminmax <> <> lib
+R498:512 Coq.Reals.Reals <> <> lib
+ind 587:594 <> AtomType
+constr 608:618 <> ConceptNode
+constr 671:683 <> PredicateNode
+constr 738:749 <> VariableNode
+constr 794:803 <> NumberNode
+constr 857:864 <> ListLink
+constr 919:932 <> EvaluationLink
+constr 987:1001 <> ImplicationLink
+constr 1054:1060 <> AndLink
+constr 1113:1118 <> OrLink
+constr 1172:1178 <> NotLink
+constr 1228:1237 <> ForAllLink
+constr 1299:1308 <> ExistsLink
+constr 1372:1378 <> BoxLink
+constr 1434:1444 <> DiamondLink
+constr 1500:1506 <> ODELink
+constr 1558:1566 <> ProofLink
+R625:632 opencog.atoms <> AtomType:1 ind
+R688:695 opencog.atoms <> AtomType:1 ind
+R755:762 opencog.atoms <> AtomType:1 ind
+R811:818 opencog.atoms <> AtomType:1 ind
+R874:881 opencog.atoms <> AtomType:1 ind
+R936:943 opencog.atoms <> AtomType:1 ind
+R1004:1011 opencog.atoms <> AtomType:1 ind
+R1071:1078 opencog.atoms <> AtomType:1 ind
+R1130:1137 opencog.atoms <> AtomType:1 ind
+R1189:1196 opencog.atoms <> AtomType:1 ind
+R1245:1252 opencog.atoms <> AtomType:1 ind
+R1316:1323 opencog.atoms <> AtomType:1 ind
+R1389:1396 opencog.atoms <> AtomType:1 ind
+R1451:1458 opencog.atoms <> AtomType:1 ind
+R1517:1524 opencog.atoms <> AtomType:1 ind
+R1575:1582 opencog.atoms <> AtomType:1 ind
+scheme 587:594 <> AtomType_rect
+scheme 587:594 <> AtomType_ind
+scheme 587:594 <> AtomType_rec
+scheme 587:594 <> AtomType_sind
+rec 1703:1712 <> TruthValue
+proj 1741:1748 <> strength
+proj 1789:1798 <> confidence
+R1752:1752 Coq.QArith.QArith_base <> Q rec
+R1802:1802 Coq.QArith.QArith_base <> Q rec
+rec 1904:1907 <> Atom
+proj 1930:1936 <> atom_id
+proj 1947:1955 <> atom_type
+proj 1971:1979 <> atom_name
+proj 1993:2005 <> atom_outgoing
+proj 2050:2056 <> atom_tv
+proj 2098:2112 <> atom_dL_formula
+proj 2163:2177 <> atom_dL_program
+proj 2228:2239 <> atom_dL_term
+R1940:1942 Coq.Init.Datatypes <> nat ind
+R1959:1966 opencog.atoms <> AtomType ind
+R1983:1988 Coq.Strings.String <> string ind
+R2009:2012 Coq.Init.Datatypes <> list ind
+R2014:2017 opencog.atoms <> Atom:6 ind
+R2060:2069 opencog.atoms <> TruthValue rec
+R2116:2121 Coq.Init.Datatypes <> option ind
+R2123:2129 syntax.expressions <> Formula ind
+R2181:2186 Coq.Init.Datatypes <> option ind
+R2188:2194 syntax.expressions <> Program ind
+R2243:2248 Coq.Init.Datatypes <> option ind
+R2250:2253 syntax.expressions <> Term ind
+scheme 1904:1907 <> Atom_rect
+scheme 1904:1907 <> Atom_ind
+scheme 1904:1907 <> Atom_rec
+scheme 1904:1907 <> Atom_sind
+rec 2337:2345 <> Atomspace
+proj 2373:2377 <> atoms
+proj 2394:2400 <> next_id
+R2381:2384 Coq.Init.Datatypes <> list ind
+R2386:2389 opencog.atoms <> Atom indrec
+R2404:2406 Coq.Init.Datatypes <> nat ind
+def 2475:2481 <> tv_true
+R2485:2494 opencog.atoms <> TruthValue rec
+R2499:2510 opencog.atoms <> mkTruthValue constr
+R2514:2514 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R2520:2520 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 2536:2543 <> tv_false
+R2547:2556 opencog.atoms <> TruthValue rec
+R2561:2572 opencog.atoms <> mkTruthValue constr
+R2576:2576 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R2582:2582 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 2598:2607 <> tv_unknown
+R2611:2620 opencog.atoms <> TruthValue rec
+R2625:2636 opencog.atoms <> mkTruthValue constr
+R2640:2640 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R2646:2646 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 2663:2668 <> tv_and
+R2681:2690 opencog.atoms <> TruthValue rec
+binder 2671:2673 <> tv1:18
+binder 2675:2677 <> tv2:19
+R2695:2704 opencog.atoms <> TruthValue rec
+R2711:2722 opencog.atoms <> mkTruthValue constr
+R2730:2733 Coq.QArith.Qminmax <> Qmin def
+R2736:2743 opencog.atoms <> strength proj
+R2745:2747 opencog.atoms <> tv1:18 var
+R2751:2758 opencog.atoms <> strength proj
+R2760:2762 opencog.atoms <> tv2:19 var
+R2771:2774 Coq.QArith.Qminmax <> Qmin def
+R2777:2786 opencog.atoms <> confidence proj
+R2788:2790 opencog.atoms <> tv1:18 var
+R2794:2803 opencog.atoms <> confidence proj
+R2805:2807 opencog.atoms <> tv2:19 var
+def 2824:2828 <> tv_or
+R2841:2850 opencog.atoms <> TruthValue rec
+binder 2831:2833 <> tv1:20
+binder 2835:2837 <> tv2:21
+R2855:2864 opencog.atoms <> TruthValue rec
+R2871:2882 opencog.atoms <> mkTruthValue constr
+R2890:2893 Coq.QArith.Qminmax <> Qmax def
+R2896:2903 opencog.atoms <> strength proj
+R2905:2907 opencog.atoms <> tv1:20 var
+R2911:2918 opencog.atoms <> strength proj
+R2920:2922 opencog.atoms <> tv2:21 var
+R2931:2934 Coq.QArith.Qminmax <> Qmin def
+R2937:2946 opencog.atoms <> confidence proj
+R2948:2950 opencog.atoms <> tv1:20 var
+R2954:2963 opencog.atoms <> confidence proj
+R2965:2967 opencog.atoms <> tv2:21 var
+def 2984:2989 <> tv_not
+R2997:3006 opencog.atoms <> TruthValue rec
+binder 2992:2993 <> tv:22
+R3011:3020 opencog.atoms <> TruthValue rec
+R3027:3038 opencog.atoms <> mkTruthValue constr
+R3046:3051 Coq.QArith.QArith_base <> Qminus def
+R3055:3055 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R3060:3067 opencog.atoms <> strength proj
+R3069:3070 opencog.atoms <> tv:22 var
+R3079:3088 opencog.atoms <> confidence proj
+R3090:3091 opencog.atoms <> tv:22 var
+def 3161:3181 <> kassignable_to_string
+R3188:3198 syntax.symbol <> KAssignable ind
+binder 3184:3184 <> x:23
+R3203:3208 Coq.Strings.String <> string ind
+R3221:3221 opencog.atoms <> x:23 var
+R3232:3241 syntax.symbol <> KAssignVar constr
+R3244:3251 syntax.symbol <> variable constr
+R3265:3275 syntax.symbol <> KAssignDiff constr
+R3282:3282 Coq.Strings.String <> ::string_scope:x_'++'_x not
+R3306:3310 Coq.Strings.String <> ::string_scope:x_'++'_x not
+R3283:3303 opencog.atoms <> kassignable_to_string:24 def
+def 3384:3396 <> string_of_nat
+R3403:3405 Coq.Init.Datatypes <> nat ind
+binder 3399:3399 <> n:26
+R3410:3415 Coq.Strings.String <> string ind
+R3428:3428 opencog.atoms <> n:26 var
+R3439:3439 Coq.Init.Datatypes <> O constr
+R3452:3452 Coq.Init.Datatypes <> S constr
+R3464:3467 Coq.Strings.String <> ::string_scope:x_'++'_x not
+R3484:3487 Coq.Strings.String <> ::string_scope:x_'++'_x not
+R3468:3480 opencog.atoms <> string_of_nat:27 def
+def 3568:3582 <> formula_to_atom
+R3589:3595 syntax.expressions <> Formula ind
+binder 3585:3585 <> f:29
+R3604:3606 Coq.Init.Datatypes <> nat ind
+binder 3599:3600 <> id:30
+R3611:3614 opencog.atoms <> Atom indrec
+R3627:3627 opencog.atoms <> f:29 var
+R3638:3643 syntax.expressions <> KFtrue constr
+R3648:3653 opencog.atoms <> mkAtom constr
+R3655:3656 opencog.atoms <> id:30 var
+R3658:3668 opencog.atoms <> ConceptNode constr
+R3677:3678 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3680:3686 opencog.atoms <> tv_true def
+R3689:3692 Coq.Init.Datatypes <> Some constr
+R3694:3694 opencog.atoms <> f:29 var
+R3697:3700 Coq.Init.Datatypes <> None constr
+R3702:3705 Coq.Init.Datatypes <> None constr
+R3711:3717 syntax.expressions <> KFfalse constr
+R3722:3727 opencog.atoms <> mkAtom constr
+R3729:3730 opencog.atoms <> id:30 var
+R3732:3742 opencog.atoms <> ConceptNode constr
+R3752:3753 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3755:3762 opencog.atoms <> tv_false def
+R3765:3768 Coq.Init.Datatypes <> Some constr
+R3770:3770 opencog.atoms <> f:29 var
+R3773:3776 Coq.Init.Datatypes <> None constr
+R3778:3781 Coq.Init.Datatypes <> None constr
+R3787:3791 syntax.expressions <> KFand constr
+R3807:3812 opencog.atoms <> mkAtom constr
+R3814:3815 opencog.atoms <> id:30 var
+R3817:3823 opencog.atoms <> AndLink constr
+R3831:3832 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3834:3843 opencog.atoms <> tv_unknown def
+R3846:3849 Coq.Init.Datatypes <> Some constr
+R3851:3851 opencog.atoms <> f:29 var
+R3854:3857 Coq.Init.Datatypes <> None constr
+R3859:3862 Coq.Init.Datatypes <> None constr
+R3868:3871 syntax.expressions <> KFor constr
+R3887:3892 opencog.atoms <> mkAtom constr
+R3894:3895 opencog.atoms <> id:30 var
+R3897:3902 opencog.atoms <> OrLink constr
+R3909:3910 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3912:3921 opencog.atoms <> tv_unknown def
+R3924:3927 Coq.Init.Datatypes <> Some constr
+R3929:3929 opencog.atoms <> f:29 var
+R3932:3935 Coq.Init.Datatypes <> None constr
+R3937:3940 Coq.Init.Datatypes <> None constr
+R3946:3950 syntax.expressions <> KFnot constr
+R3968:3973 opencog.atoms <> mkAtom constr
+R3975:3976 opencog.atoms <> id:30 var
+R3978:3984 opencog.atoms <> NotLink constr
+R3992:3993 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3995:4004 opencog.atoms <> tv_unknown def
+R4007:4010 Coq.Init.Datatypes <> Some constr
+R4012:4012 opencog.atoms <> f:29 var
+R4015:4018 Coq.Init.Datatypes <> None constr
+R4020:4023 Coq.Init.Datatypes <> None constr
+R4029:4035 syntax.expressions <> KFimply constr
+R4051:4056 opencog.atoms <> mkAtom constr
+R4058:4059 opencog.atoms <> id:30 var
+R4061:4075 opencog.atoms <> ImplicationLink constr
+R4087:4088 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4090:4099 opencog.atoms <> tv_unknown def
+R4102:4105 Coq.Init.Datatypes <> Some constr
+R4107:4107 opencog.atoms <> f:29 var
+R4110:4113 Coq.Init.Datatypes <> None constr
+R4115:4118 Coq.Init.Datatypes <> None constr
+R4124:4128 syntax.expressions <> KFbox constr
+R4151:4156 opencog.atoms <> mkAtom constr
+R4158:4159 opencog.atoms <> id:30 var
+R4161:4167 opencog.atoms <> BoxLink constr
+R4175:4176 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4178:4187 opencog.atoms <> tv_unknown def
+R4190:4193 Coq.Init.Datatypes <> Some constr
+R4195:4195 opencog.atoms <> f:29 var
+R4198:4201 Coq.Init.Datatypes <> None constr
+R4203:4206 Coq.Init.Datatypes <> None constr
+R4212:4220 syntax.expressions <> KFdiamond constr
+R4243:4248 opencog.atoms <> mkAtom constr
+R4250:4251 opencog.atoms <> id:30 var
+R4253:4263 opencog.atoms <> DiamondLink constr
+R4275:4276 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4278:4287 opencog.atoms <> tv_unknown def
+R4290:4293 Coq.Init.Datatypes <> Some constr
+R4295:4295 opencog.atoms <> f:29 var
+R4298:4301 Coq.Init.Datatypes <> None constr
+R4303:4306 Coq.Init.Datatypes <> None constr
+R4312:4325 syntax.expressions <> KFgreaterEqual constr
+R4340:4345 opencog.atoms <> mkAtom constr
+R4347:4348 opencog.atoms <> id:30 var
+R4350:4362 opencog.atoms <> PredicateNode constr
+R4370:4371 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4373:4382 opencog.atoms <> tv_unknown def
+R4385:4388 Coq.Init.Datatypes <> Some constr
+R4390:4390 opencog.atoms <> f:29 var
+R4393:4396 Coq.Init.Datatypes <> None constr
+R4398:4401 Coq.Init.Datatypes <> None constr
+R4412:4417 opencog.atoms <> mkAtom constr
+R4419:4420 opencog.atoms <> id:30 var
+R4422:4432 opencog.atoms <> ConceptNode constr
+R4452:4453 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4455:4464 opencog.atoms <> tv_unknown def
+R4467:4470 Coq.Init.Datatypes <> Some constr
+R4472:4472 opencog.atoms <> f:29 var
+R4475:4478 Coq.Init.Datatypes <> None constr
+R4480:4483 Coq.Init.Datatypes <> None constr
+def 4561:4575 <> program_to_atom
+R4582:4588 syntax.expressions <> Program ind
+binder 4578:4578 <> p:32
+R4597:4599 Coq.Init.Datatypes <> nat ind
+binder 4592:4593 <> id:33
+R4604:4607 opencog.atoms <> Atom indrec
+R4620:4620 opencog.atoms <> p:32 var
+R4631:4638 syntax.expressions <> KPassign constr
+R4653:4658 opencog.atoms <> mkAtom constr
+R4660:4661 opencog.atoms <> id:33 var
+R4663:4673 opencog.atoms <> ConceptNode constr
+R4684:4685 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4687:4696 opencog.atoms <> tv_unknown def
+R4698:4701 Coq.Init.Datatypes <> None constr
+R4704:4707 Coq.Init.Datatypes <> Some constr
+R4709:4709 opencog.atoms <> p:32 var
+R4712:4715 Coq.Init.Datatypes <> None constr
+R4721:4726 syntax.expressions <> KPtest constr
+R4742:4747 opencog.atoms <> mkAtom constr
+R4749:4750 opencog.atoms <> id:33 var
+R4752:4762 opencog.atoms <> ConceptNode constr
+R4771:4772 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4774:4783 opencog.atoms <> tv_unknown def
+R4785:4788 Coq.Init.Datatypes <> None constr
+R4791:4794 Coq.Init.Datatypes <> Some constr
+R4796:4796 opencog.atoms <> p:32 var
+R4799:4802 Coq.Init.Datatypes <> None constr
+R4808:4815 syntax.expressions <> KPchoice constr
+R4830:4835 opencog.atoms <> mkAtom constr
+R4837:4838 opencog.atoms <> id:33 var
+R4840:4850 opencog.atoms <> ConceptNode constr
+R4861:4862 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4864:4873 opencog.atoms <> tv_unknown def
+R4875:4878 Coq.Init.Datatypes <> None constr
+R4881:4884 Coq.Init.Datatypes <> Some constr
+R4886:4886 opencog.atoms <> p:32 var
+R4889:4892 Coq.Init.Datatypes <> None constr
+R4898:4906 syntax.expressions <> KPcompose constr
+R4921:4926 opencog.atoms <> mkAtom constr
+R4928:4929 opencog.atoms <> id:33 var
+R4931:4941 opencog.atoms <> ConceptNode constr
+R4953:4954 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4956:4965 opencog.atoms <> tv_unknown def
+R4967:4970 Coq.Init.Datatypes <> None constr
+R4973:4976 Coq.Init.Datatypes <> Some constr
+R4978:4978 opencog.atoms <> p:32 var
+R4981:4984 Coq.Init.Datatypes <> None constr
+R4990:4995 syntax.expressions <> KPloop constr
+R5012:5017 opencog.atoms <> mkAtom constr
+R5019:5020 opencog.atoms <> id:33 var
+R5022:5032 opencog.atoms <> ConceptNode constr
+R5041:5042 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5044:5053 opencog.atoms <> tv_unknown def
+R5055:5058 Coq.Init.Datatypes <> None constr
+R5061:5064 Coq.Init.Datatypes <> Some constr
+R5066:5066 opencog.atoms <> p:32 var
+R5069:5072 Coq.Init.Datatypes <> None constr
+R5078:5088 syntax.expressions <> KPodeSystem constr
+R5114:5119 opencog.atoms <> mkAtom constr
+R5121:5122 opencog.atoms <> id:33 var
+R5124:5130 opencog.atoms <> ODELink constr
+R5145:5146 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5148:5157 opencog.atoms <> tv_unknown def
+R5159:5162 Coq.Init.Datatypes <> None constr
+R5165:5168 Coq.Init.Datatypes <> Some constr
+R5170:5170 opencog.atoms <> p:32 var
+R5173:5176 Coq.Init.Datatypes <> None constr
+R5187:5192 opencog.atoms <> mkAtom constr
+R5194:5195 opencog.atoms <> id:33 var
+R5197:5207 opencog.atoms <> ConceptNode constr
+R5227:5228 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5230:5239 opencog.atoms <> tv_unknown def
+R5241:5244 Coq.Init.Datatypes <> None constr
+R5247:5250 Coq.Init.Datatypes <> Some constr
+R5252:5252 opencog.atoms <> p:32 var
+R5255:5258 Coq.Init.Datatypes <> None constr
+def 5333:5344 <> term_to_atom
+R5351:5354 syntax.expressions <> Term ind
+binder 5347:5347 <> t:35
+R5363:5365 Coq.Init.Datatypes <> nat ind
+binder 5358:5359 <> id:36
+R5370:5373 opencog.atoms <> Atom indrec
+R5386:5386 opencog.atoms <> t:35 var
+R5397:5404 syntax.expressions <> KTnumber constr
+R5407:5412 syntax.expressions <> KTNnat constr
+R5420:5425 opencog.atoms <> mkAtom constr
+R5427:5428 opencog.atoms <> id:36 var
+R5430:5439 opencog.atoms <> NumberNode constr
+R5442:5454 opencog.atoms <> string_of_nat def
+R5459:5460 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5462:5468 opencog.atoms <> tv_true def
+R5470:5473 Coq.Init.Datatypes <> None constr
+R5475:5478 Coq.Init.Datatypes <> None constr
+R5481:5484 Coq.Init.Datatypes <> Some constr
+R5486:5486 opencog.atoms <> t:35 var
+R5493:5500 syntax.expressions <> KTnumber constr
+R5503:5509 syntax.expressions <> KTNreal constr
+R5517:5522 opencog.atoms <> mkAtom constr
+R5524:5525 opencog.atoms <> id:36 var
+R5527:5536 opencog.atoms <> NumberNode constr
+R5545:5546 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5548:5554 opencog.atoms <> tv_true def
+R5556:5559 Coq.Init.Datatypes <> None constr
+R5561:5564 Coq.Init.Datatypes <> None constr
+R5567:5570 Coq.Init.Datatypes <> Some constr
+R5572:5572 opencog.atoms <> t:35 var
+R5579:5584 syntax.expressions <> KTread constr
+R5591:5596 opencog.atoms <> mkAtom constr
+R5598:5599 opencog.atoms <> id:36 var
+R5601:5612 opencog.atoms <> VariableNode constr
+R5615:5635 opencog.atoms <> kassignable_to_string def
+R5640:5641 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5643:5649 opencog.atoms <> tv_true def
+R5651:5654 Coq.Init.Datatypes <> None constr
+R5656:5659 Coq.Init.Datatypes <> None constr
+R5662:5665 Coq.Init.Datatypes <> Some constr
+R5667:5667 opencog.atoms <> t:35 var
+R5674:5679 syntax.expressions <> KTplus constr
+R5694:5699 opencog.atoms <> mkAtom constr
+R5701:5702 opencog.atoms <> id:36 var
+R5704:5714 opencog.atoms <> ConceptNode constr
+R5723:5724 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5726:5735 opencog.atoms <> tv_unknown def
+R5737:5740 Coq.Init.Datatypes <> None constr
+R5742:5745 Coq.Init.Datatypes <> None constr
+R5748:5751 Coq.Init.Datatypes <> Some constr
+R5753:5753 opencog.atoms <> t:35 var
+R5760:5766 syntax.expressions <> KTminus constr
+R5781:5786 opencog.atoms <> mkAtom constr
+R5788:5789 opencog.atoms <> id:36 var
+R5791:5801 opencog.atoms <> ConceptNode constr
+R5811:5812 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5814:5823 opencog.atoms <> tv_unknown def
+R5825:5828 Coq.Init.Datatypes <> None constr
+R5830:5833 Coq.Init.Datatypes <> None constr
+R5836:5839 Coq.Init.Datatypes <> Some constr
+R5841:5841 opencog.atoms <> t:35 var
+R5848:5854 syntax.expressions <> KTtimes constr
+R5869:5874 opencog.atoms <> mkAtom constr
+R5876:5877 opencog.atoms <> id:36 var
+R5879:5889 opencog.atoms <> ConceptNode constr
+R5899:5900 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5902:5911 opencog.atoms <> tv_unknown def
+R5913:5916 Coq.Init.Datatypes <> None constr
+R5918:5921 Coq.Init.Datatypes <> None constr
+R5924:5927 Coq.Init.Datatypes <> Some constr
+R5929:5929 opencog.atoms <> t:35 var
+R5936:5949 syntax.expressions <> KTdifferential constr
+R5966:5971 opencog.atoms <> mkAtom constr
+R5973:5974 opencog.atoms <> id:36 var
+R5976:5986 opencog.atoms <> ConceptNode constr
+R6003:6004 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R6006:6015 opencog.atoms <> tv_unknown def
+R6017:6020 Coq.Init.Datatypes <> None constr
+R6022:6025 Coq.Init.Datatypes <> None constr
+R6028:6031 Coq.Init.Datatypes <> Some constr
+R6033:6033 opencog.atoms <> t:35 var
+R6045:6050 opencog.atoms <> mkAtom constr
+R6052:6053 opencog.atoms <> id:36 var
+R6055:6065 opencog.atoms <> ConceptNode constr
+R6082:6083 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R6085:6094 opencog.atoms <> tv_unknown def
+R6096:6099 Coq.Init.Datatypes <> None constr
+R6101:6104 Coq.Init.Datatypes <> None constr
+R6107:6110 Coq.Init.Datatypes <> Some constr
+R6112:6112 opencog.atoms <> t:35 var
+def 6184:6194 <> ode_to_atom
+R6203:6205 syntax.expressions <> ODE ind
+binder 6197:6199 <> ode:38
+R6214:6216 Coq.Init.Datatypes <> nat ind
+binder 6209:6210 <> id:39
+R6221:6224 opencog.atoms <> Atom indrec
+R6237:6239 opencog.atoms <> ode:38 var
+R6250:6258 syntax.expressions <> ODEatomic constr
+R6261:6267 syntax.expressions <> ODEsing constr
+R6283:6288 opencog.atoms <> mkAtom constr
+R6290:6291 opencog.atoms <> id:39 var
+R6293:6303 opencog.atoms <> ConceptNode constr
+R6316:6317 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R6319:6328 opencog.atoms <> tv_unknown def
+R6330:6333 Coq.Init.Datatypes <> None constr
+R6335:6338 Coq.Init.Datatypes <> None constr
+R6340:6343 Coq.Init.Datatypes <> None constr
+R6349:6355 syntax.expressions <> ODEprod constr
+R6370:6375 opencog.atoms <> mkAtom constr
+R6377:6378 opencog.atoms <> id:39 var
+R6380:6390 opencog.atoms <> ConceptNode constr
+R6403:6404 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R6406:6415 opencog.atoms <> tv_unknown def
+R6417:6420 Coq.Init.Datatypes <> None constr
+R6422:6425 Coq.Init.Datatypes <> None constr
+R6427:6430 Coq.Init.Datatypes <> None constr
+R6441:6446 opencog.atoms <> mkAtom constr
+R6448:6449 opencog.atoms <> id:39 var
+R6451:6461 opencog.atoms <> ConceptNode constr
+R6477:6478 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R6480:6489 opencog.atoms <> tv_unknown def
+R6491:6494 Coq.Init.Datatypes <> None constr
+R6496:6499 Coq.Init.Datatypes <> None constr
+R6501:6504 Coq.Init.Datatypes <> None constr
+def 6554:6561 <> add_atom
+R6580:6588 opencog.atoms <> Atomspace rec
+binder 6564:6576 <> atomspace_arg:41
+R6596:6599 opencog.atoms <> Atom indrec
+binder 6592:6592 <> a:42
+R6604:6612 opencog.atoms <> Atomspace rec
+R6619:6629 opencog.atoms <> mkAtomspace constr
+R6633:6637 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6657:6657 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6632:6632 opencog.atoms <> a:42 var
+R6638:6642 opencog.atoms <> atoms proj
+R6644:6656 opencog.atoms <> atomspace_arg:41 var
+R6661:6661 Coq.Init.Datatypes <> S constr
+R6664:6670 opencog.atoms <> next_id proj
+R6672:6684 opencog.atoms <> atomspace_arg:41 var
+def 6727:6744 <> find_atoms_by_type
+R6763:6771 opencog.atoms <> Atomspace rec
+binder 6747:6759 <> atomspace_arg:43
+R6789:6796 opencog.atoms <> AtomType ind
+binder 6775:6785 <> target_type:44
+R6801:6804 Coq.Init.Datatypes <> list ind
+R6806:6809 opencog.atoms <> Atom indrec
+R6816:6821 Coq.Lists.List <> filter def
+R7145:7149 opencog.atoms <> atoms proj
+R7151:7163 opencog.atoms <> atomspace_arg:43 var
+binder 6828:6828 <> a:45
+R6844:6852 opencog.atoms <> atom_type proj
+R6854:6854 opencog.atoms <> a:45 var
+R6868:6878 opencog.atoms <> ConceptNode constr
+R6889:6899 opencog.atoms <> target_type:44 var
+R6906:6916 opencog.atoms <> ConceptNode constr
+R6921:6924 Coq.Init.Datatypes <> true constr
+R6933:6937 Coq.Init.Datatypes <> false constr
+R6949:6961 opencog.atoms <> PredicateNode constr
+R6972:6982 opencog.atoms <> target_type:44 var
+R6989:7001 opencog.atoms <> PredicateNode constr
+R7006:7009 Coq.Init.Datatypes <> true constr
+R7018:7022 Coq.Init.Datatypes <> false constr
+R7034:7048 opencog.atoms <> ImplicationLink constr
+R7059:7069 opencog.atoms <> target_type:44 var
+R7076:7090 opencog.atoms <> ImplicationLink constr
+R7095:7098 Coq.Init.Datatypes <> true constr
+R7107:7111 Coq.Init.Datatypes <> false constr
+R7128:7132 Coq.Init.Datatypes <> false constr
+def 7209:7223 <> empty_atomspace
+R7227:7235 opencog.atoms <> Atomspace rec
+R7240:7250 opencog.atoms <> mkAtomspace constr
+R7252:7253 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+def 7305:7315 <> add_formula
+R7334:7342 opencog.atoms <> Atomspace rec
+binder 7318:7330 <> atomspace_arg:49
+R7350:7356 syntax.expressions <> Formula ind
+binder 7346:7346 <> f:50
+R7361:7369 opencog.atoms <> Atomspace rec
+R7388:7402 opencog.atoms <> formula_to_atom def
+R7404:7404 opencog.atoms <> f:50 var
+R7407:7413 opencog.atoms <> next_id proj
+R7415:7427 opencog.atoms <> atomspace_arg:49 var
+binder 7380:7383 <> atom:51
+R7435:7442 opencog.atoms <> add_atom def
+R7444:7456 opencog.atoms <> atomspace_arg:49 var
+R7458:7461 opencog.atoms <> atom:51 var
+def 7511:7521 <> add_program
+R7540:7548 opencog.atoms <> Atomspace rec
+binder 7524:7536 <> atomspace_arg:52
+R7556:7562 syntax.expressions <> Program ind
+binder 7552:7552 <> p:53
+R7567:7575 opencog.atoms <> Atomspace rec
+R7594:7608 opencog.atoms <> program_to_atom def
+R7610:7610 opencog.atoms <> p:53 var
+R7613:7619 opencog.atoms <> next_id proj
+R7621:7633 opencog.atoms <> atomspace_arg:52 var
+binder 7586:7589 <> atom:54
+R7641:7648 opencog.atoms <> add_atom def
+R7650:7662 opencog.atoms <> atomspace_arg:52 var
+R7664:7667 opencog.atoms <> atom:54 var
