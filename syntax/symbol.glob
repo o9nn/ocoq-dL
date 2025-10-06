@@ -1,0 +1,88 @@
+DIGEST 38a4bf920cdb6bfcfd72c1a728b33277
+Fsyntax.symbol
+R1000:1005 Coq.Strings.String <> <> lib
+R1023:1027 Coq.Reals.Reals <> <> lib
+R1045:1058 Coq.Lists.List <> <> lib
+R1068:1085 Coq.Lists.List ListNotations <> mod
+ind 1424:1432 <> KVariable
+constr 1446:1453 <> variable
+R1463:1475 Coq.Strings.String <> string ind
+binder 1456:1459 <> name:3
+R1480:1488 syntax.symbol <> KVariable:1 ind
+scheme 1424:1432 <> KVariable_rect
+scheme 1424:1432 <> KVariable_ind
+scheme 1424:1432 <> KVariable_rec
+scheme 1424:1432 <> KVariable_sind
+ind 1531:1538 <> KChannel
+constr 1552:1558 <> channel
+R1568:1580 Coq.Strings.String <> string ind
+binder 1561:1564 <> name:6
+R1585:1592 syntax.symbol <> KChannel:4 ind
+scheme 1531:1538 <> KChannel_rect
+scheme 1531:1538 <> KChannel_ind
+scheme 1531:1538 <> KChannel_rec
+scheme 1531:1538 <> KChannel_sind
+ind 1630:1645 <> ProgramConstName
+constr 1659:1679 <> program_constant_name
+R1689:1701 Coq.Strings.String <> string ind
+binder 1682:1685 <> name:9
+R1706:1721 syntax.symbol <> ProgramConstName:7 ind
+scheme 1630:1645 <> ProgramConstName_rect
+scheme 1630:1645 <> ProgramConstName_ind
+scheme 1630:1645 <> ProgramConstName_rec
+scheme 1630:1645 <> ProgramConstName_sind
+ind 1772:1779 <> ODEConst
+constr 1793:1804 <> ode_constant
+R1814:1826 Coq.Strings.String <> string ind
+binder 1807:1810 <> name:12
+R1831:1838 syntax.symbol <> ODEConst:10 ind
+scheme 1772:1779 <> ODEConst_rect
+scheme 1772:1779 <> ODEConst_ind
+scheme 1772:1779 <> ODEConst_rec
+scheme 1772:1779 <> ODEConst_sind
+ind 1875:1888 <> FunctionSymbol
+constr 1902:1916 <> function_symbol
+R1926:1938 Coq.Strings.String <> string ind
+binder 1919:1922 <> name:15
+R1943:1956 syntax.symbol <> FunctionSymbol:13 ind
+scheme 1875:1888 <> FunctionSymbol_rect
+scheme 1875:1888 <> FunctionSymbol_ind
+scheme 1875:1888 <> FunctionSymbol_rec
+scheme 1875:1888 <> FunctionSymbol_sind
+ind 1994:2008 <> PredicateSymbol
+constr 2022:2037 <> predicate_symbol
+R2047:2059 Coq.Strings.String <> string ind
+binder 2040:2043 <> name:18
+R2064:2078 syntax.symbol <> PredicateSymbol:16 ind
+scheme 1994:2008 <> PredicateSymbol_rect
+scheme 1994:2008 <> PredicateSymbol_ind
+scheme 1994:2008 <> PredicateSymbol_rec
+scheme 1994:2008 <> PredicateSymbol_sind
+ind 2117:2132 <> QuantifierSymbol
+constr 2146:2162 <> quantifier_symbol
+R2172:2184 Coq.Strings.String <> string ind
+binder 2165:2168 <> name:21
+R2189:2204 syntax.symbol <> QuantifierSymbol:19 ind
+scheme 2117:2132 <> QuantifierSymbol_rect
+scheme 2117:2132 <> QuantifierSymbol_ind
+scheme 2117:2132 <> QuantifierSymbol_rec
+scheme 2117:2132 <> QuantifierSymbol_sind
+def 2219:2221 <> Var
+R2227:2235 syntax.symbol <> KVariable ind
+ind 2264:2274 <> KAssignable
+constr 2288:2297 <> KAssignVar
+constr 2342:2352 <> KAssignDiff
+R2312:2320 syntax.symbol <> KVariable ind
+binder 2301:2308 <> variable:24
+R2328:2338 syntax.symbol <> KAssignable:22 ind
+R2366:2376 syntax.symbol <> KAssignable:22 ind
+binder 2355:2359 <> assgn:25
+R2382:2392 syntax.symbol <> KAssignable:22 ind
+scheme 2264:2274 <> KAssignable_rect
+scheme 2264:2274 <> KAssignable_ind
+scheme 2264:2274 <> KAssignable_rec
+scheme 2264:2274 <> KAssignable_sind
+def 2407:2412 <> Assign
+R2417:2427 syntax.symbol <> KAssignable ind
+def 2441:2442 <> KD
+R2447:2457 syntax.symbol <> KAssignDiff constr

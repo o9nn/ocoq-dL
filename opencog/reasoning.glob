@@ -1,0 +1,512 @@
+DIGEST 38ed3a5f113d0778b52660a24bfe397e
+Fopencog.reasoning
+R241:253 opencog.atoms <> <> lib
+R271:276 Coq.Strings.String <> <> lib
+R294:307 Coq.Lists.List <> <> lib
+R317:334 Coq.Lists.List ListNotations <> mod
+R352:368 Coq.QArith.QArith <> <> lib
+R386:403 Coq.QArith.Qminmax <> <> lib
+ind 547:550 <> step
+constr 564:579 <> step_placeholder
+R589:592 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R583:588 Coq.Strings.String <> string ind
+R593:596 opencog.reasoning <> step:1 ind
+scheme 547:550 <> step_rect
+scheme 547:550 <> step_ind
+scheme 547:550 <> step_rec
+scheme 547:550 <> step_sind
+ind 650:656 <> Pattern
+constr 670:679 <> PatternVar
+constr 727:740 <> PatternFormula
+constr 792:809 <> PatternImplication
+constr 872:881 <> PatternBox
+constr 945:958 <> PatternDiamond
+constr 1026:1035 <> PatternAnd
+constr 1098:1106 <> PatternOr
+constr 1169:1178 <> PatternAny
+R689:692 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R683:688 Coq.Strings.String <> string ind
+R693:699 opencog.reasoning <> Pattern:3 ind
+R751:754 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R744:750 syntax.expressions <> Formula ind
+R755:761 opencog.reasoning <> Pattern:3 ind
+R820:823 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R813:819 opencog.reasoning <> Pattern:3 ind
+R831:834 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R824:830 opencog.reasoning <> Pattern:3 ind
+R835:841 opencog.reasoning <> Pattern:3 ind
+R892:895 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R885:891 opencog.reasoning <> Pattern:3 ind
+R903:906 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R896:902 opencog.reasoning <> Pattern:3 ind
+R907:913 opencog.reasoning <> Pattern:3 ind
+R969:972 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R962:968 opencog.reasoning <> Pattern:3 ind
+R980:983 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R973:979 opencog.reasoning <> Pattern:3 ind
+R984:990 opencog.reasoning <> Pattern:3 ind
+R1046:1049 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1039:1045 opencog.reasoning <> Pattern:3 ind
+R1057:1060 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1050:1056 opencog.reasoning <> Pattern:3 ind
+R1061:1067 opencog.reasoning <> Pattern:3 ind
+R1117:1120 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1110:1116 opencog.reasoning <> Pattern:3 ind
+R1128:1131 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1121:1127 opencog.reasoning <> Pattern:3 ind
+R1132:1138 opencog.reasoning <> Pattern:3 ind
+R1182:1188 opencog.reasoning <> Pattern:3 ind
+scheme 650:656 <> Pattern_rect
+scheme 650:656 <> Pattern_ind
+scheme 650:656 <> Pattern_rec
+scheme 650:656 <> Pattern_sind
+def 1265:1276 <> PatternSubst
+R1281:1284 Coq.Init.Datatypes <> list ind
+R1293:1295 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1287:1292 Coq.Strings.String <> string ind
+R1296:1302 syntax.expressions <> Formula ind
+rec 1351:1364 <> AttentionValue
+proj 1397:1399 <> sti
+proj 1437:1439 <> lti
+proj 1476:1479 <> vlti
+R1403:1403 Coq.QArith.QArith_base <> Q rec
+R1443:1443 Coq.QArith.QArith_base <> Q rec
+R1483:1483 Coq.QArith.QArith_base <> Q rec
+rec 1572:1584 <> CognitiveAtom
+proj 1616:1624 <> base_atom
+proj 1636:1644 <> attention
+proj 1666:1681 <> activation_count
+proj 1692:1700 <> last_used
+R1628:1631 opencog.atoms <> Atom indrec
+R1648:1661 opencog.reasoning <> AttentionValue rec
+R1685:1687 Coq.Init.Datatypes <> nat ind
+R1704:1706 Coq.Init.Datatypes <> nat ind
+rec 1788:1805 <> CognitiveAtomspace
+proj 1842:1856 <> cognitive_atoms
+proj 1882:1898 <> next_cognitive_id
+proj 1909:1920 <> current_time
+proj 1931:1949 <> attention_threshold
+R1860:1863 Coq.Init.Datatypes <> list ind
+R1865:1877 opencog.reasoning <> CognitiveAtom rec
+R1902:1904 Coq.Init.Datatypes <> nat ind
+R1924:1926 Coq.Init.Datatypes <> nat ind
+R1953:1953 Coq.QArith.QArith_base <> Q rec
+rec 2004:2016 <> InferenceRule
+proj 2048:2056 <> rule_name
+proj 2070:2085 <> premise_patterns
+proj 2105:2122 <> conclusion_pattern
+proj 2137:2151 <> soundness_proof
+proj 2236:2251 <> confidence_boost
+R2060:2065 Coq.Strings.String <> string ind
+R2089:2092 Coq.Init.Datatypes <> list ind
+R2094:2100 opencog.reasoning <> Pattern ind
+R2126:2132 opencog.reasoning <> Pattern ind
+R2155:2160 Coq.Init.Datatypes <> option ind
+R2174:2180 syntax.expressions <> Formula ind
+binder 2170:2170 <> f:23
+R2183:2186 Coq.Init.Logic <> True ind
+R2255:2255 Coq.QArith.QArith_base <> Q rec
+def 2373:2389 <> default_attention
+R2393:2406 opencog.reasoning <> AttentionValue rec
+R2411:2426 opencog.reasoning <> mkAttentionValue constr
+R2430:2430 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R2436:2436 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R2442:2442 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 2503:2521 <> make_cognitive_atom
+R2528:2531 opencog.atoms <> Atom indrec
+binder 2524:2524 <> a:26
+R2542:2544 Coq.Init.Datatypes <> nat ind
+binder 2535:2538 <> time:27
+R2549:2561 opencog.reasoning <> CognitiveAtom rec
+R2568:2582 opencog.reasoning <> mkCognitiveAtom constr
+R2584:2584 opencog.reasoning <> a:26 var
+R2586:2602 opencog.reasoning <> default_attention def
+R2606:2609 opencog.reasoning <> time:27 var
+def 2663:2678 <> update_attention
+R2686:2698 opencog.reasoning <> CognitiveAtom rec
+binder 2681:2682 <> ca:28
+R2720:2720 Coq.QArith.QArith_base <> Q rec
+binder 2702:2716 <> usage_intensity:29
+R2725:2737 opencog.reasoning <> CognitiveAtom rec
+R2758:2766 opencog.reasoning <> attention proj
+R2768:2769 opencog.reasoning <> ca:28 var
+binder 2748:2753 <> old_av:30
+R2791:2794 Coq.QArith.Qminmax <> Qmin def
+R2809:2811 Coq.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R2799:2801 opencog.reasoning <> sti proj
+R2803:2808 opencog.reasoning <> old_av:30 var
+R2812:2826 opencog.reasoning <> usage_intensity:29 var
+binder 2780:2786 <> new_sti:31
+R2849:2849 Coq.QArith.QArith_base <> ::Q_scope:x_'/'_x not
+R2873:2876 Coq.QArith.QArith_base <> ::Q_scope:x_'/'_x not
+R2860:2862 Coq.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R2850:2852 opencog.reasoning <> lti proj
+R2854:2859 opencog.reasoning <> old_av:30 var
+R2863:2865 opencog.reasoning <> sti proj
+R2867:2872 opencog.reasoning <> old_av:30 var
+binder 2838:2844 <> new_lti:32
+R2900:2900 Coq.QArith.QArith_base <> ::Q_scope:x_'/'_x not
+R2925:2928 Coq.QArith.QArith_base <> ::Q_scope:x_'/'_x not
+R2912:2914 Coq.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R2901:2904 opencog.reasoning <> vlti proj
+R2906:2911 opencog.reasoning <> old_av:30 var
+R2915:2917 opencog.reasoning <> lti proj
+R2919:2924 opencog.reasoning <> old_av:30 var
+binder 2888:2895 <> new_vlti:33
+R2950:2965 opencog.reasoning <> mkAttentionValue constr
+R2967:2973 opencog.reasoning <> new_sti:31 var
+R2975:2981 opencog.reasoning <> new_lti:32 var
+R2983:2990 opencog.reasoning <> new_vlti:33 var
+binder 2940:2945 <> new_av:34
+R2997:3011 opencog.reasoning <> mkCognitiveAtom constr
+R3014:3022 opencog.reasoning <> base_atom proj
+R3024:3025 opencog.reasoning <> ca:28 var
+R3028:3033 opencog.reasoning <> new_av:34 var
+R3036:3036 Coq.Init.Datatypes <> S constr
+R3039:3054 opencog.reasoning <> activation_count proj
+R3056:3057 opencog.reasoning <> ca:28 var
+R3062:3070 opencog.reasoning <> last_used proj
+R3072:3073 opencog.reasoning <> ca:28 var
+def 3122:3134 <> match_pattern
+R3141:3147 opencog.reasoning <> Pattern ind
+binder 3137:3137 <> p:35
+R3155:3161 syntax.expressions <> Formula ind
+binder 3151:3151 <> f:36
+R3166:3171 Coq.Init.Datatypes <> option ind
+R3173:3184 opencog.reasoning <> PatternSubst def
+R3197:3197 opencog.reasoning <> p:35 var
+R3208:3217 opencog.reasoning <> PatternVar constr
+R3227:3230 Coq.Init.Datatypes <> Some constr
+R3232:3232 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3242:3242 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3233:3233 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3238:3239 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3241:3241 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3240:3240 opencog.reasoning <> f:36 var
+R3248:3261 opencog.reasoning <> PatternFormula constr
+R3273:3276 Coq.Init.Datatypes <> Some constr
+R3278:3279 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3326:3335 opencog.reasoning <> PatternAny constr
+R3340:3343 Coq.Init.Datatypes <> Some constr
+R3345:3346 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3352:3369 opencog.reasoning <> PatternImplication constr
+R3392:3392 opencog.reasoning <> f:36 var
+R3407:3413 syntax.expressions <> KFimply constr
+R3438:3450 opencog.reasoning <> match_pattern:37 def
+R3474:3477 Coq.Init.Datatypes <> Some constr
+R3509:3521 opencog.reasoning <> match_pattern:37 def
+R3549:3552 Coq.Init.Datatypes <> Some constr
+R3564:3567 Coq.Init.Datatypes <> Some constr
+R3576:3579 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3604:3607 Coq.Init.Datatypes <> None constr
+R3612:3615 Coq.Init.Datatypes <> None constr
+R3647:3650 Coq.Init.Datatypes <> None constr
+R3655:3658 Coq.Init.Datatypes <> None constr
+R3687:3690 Coq.Init.Datatypes <> None constr
+R3706:3715 opencog.reasoning <> PatternBox constr
+R3750:3750 opencog.reasoning <> f:36 var
+R3765:3769 syntax.expressions <> KFbox constr
+R3854:3866 opencog.reasoning <> match_pattern:37 def
+R3895:3898 Coq.Init.Datatypes <> None constr
+R3914:3923 opencog.reasoning <> PatternAnd constr
+R3946:3946 opencog.reasoning <> f:36 var
+R3961:3965 syntax.expressions <> KFand constr
+R3990:4002 opencog.reasoning <> match_pattern:37 def
+R4026:4029 Coq.Init.Datatypes <> Some constr
+R4061:4073 opencog.reasoning <> match_pattern:37 def
+R4101:4104 Coq.Init.Datatypes <> Some constr
+R4116:4119 Coq.Init.Datatypes <> Some constr
+R4128:4131 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4156:4159 Coq.Init.Datatypes <> None constr
+R4164:4167 Coq.Init.Datatypes <> None constr
+R4199:4202 Coq.Init.Datatypes <> None constr
+R4207:4210 Coq.Init.Datatypes <> None constr
+R4239:4242 Coq.Init.Datatypes <> None constr
+R4263:4266 Coq.Init.Datatypes <> None constr
+def 4442:4458 <> modus_ponens_rule
+R4462:4474 opencog.reasoning <> InferenceRule rec
+R4481:4495 opencog.reasoning <> mkInferenceRule constr
+R4520:4520 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4535:4536 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4589:4589 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4521:4530 opencog.reasoning <> PatternVar constr
+R4537:4554 opencog.reasoning <> PatternImplication constr
+R4557:4566 opencog.reasoning <> PatternVar constr
+R4574:4583 opencog.reasoning <> PatternVar constr
+R4596:4605 opencog.reasoning <> PatternVar constr
+R4616:4619 Coq.Init.Datatypes <> None constr
+R4627:4627 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 4644:4664 <> and_introduction_rule
+R4668:4680 opencog.reasoning <> InferenceRule rec
+R4687:4701 opencog.reasoning <> mkInferenceRule constr
+R4723:4723 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4738:4739 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4754:4754 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4724:4733 opencog.reasoning <> PatternVar constr
+R4740:4749 opencog.reasoning <> PatternVar constr
+R4761:4770 opencog.reasoning <> PatternAnd constr
+R4773:4782 opencog.reasoning <> PatternVar constr
+R4790:4799 opencog.reasoning <> PatternVar constr
+R4811:4814 Coq.Init.Datatypes <> None constr
+R4822:4822 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 4839:4863 <> and_elimination_left_rule
+R4867:4879 opencog.reasoning <> InferenceRule rec
+R4886:4900 opencog.reasoning <> mkInferenceRule constr
+R4926:4926 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R4971:4971 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R4927:4936 opencog.reasoning <> PatternAnd constr
+R4939:4948 opencog.reasoning <> PatternVar constr
+R4956:4965 opencog.reasoning <> PatternVar constr
+R4978:4987 opencog.reasoning <> PatternVar constr
+R4998:5001 Coq.Init.Datatypes <> None constr
+R5009:5009 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 5027:5052 <> and_elimination_right_rule
+R5056:5068 opencog.reasoning <> InferenceRule rec
+R5075:5089 opencog.reasoning <> mkInferenceRule constr
+R5116:5116 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R5161:5161 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R5117:5126 opencog.reasoning <> PatternAnd constr
+R5129:5138 opencog.reasoning <> PatternVar constr
+R5146:5155 opencog.reasoning <> PatternVar constr
+R5168:5177 opencog.reasoning <> PatternVar constr
+R5188:5191 Coq.Init.Datatypes <> None constr
+R5199:5199 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 5254:5275 <> box_necessitation_rule
+R5279:5291 opencog.reasoning <> InferenceRule rec
+R5298:5312 opencog.reasoning <> mkInferenceRule constr
+R5342:5342 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R5357:5357 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R5343:5352 opencog.reasoning <> PatternVar constr
+R5364:5373 opencog.reasoning <> PatternBox constr
+R5375:5384 opencog.reasoning <> PatternAny constr
+R5387:5396 opencog.reasoning <> PatternVar constr
+R5408:5411 Coq.Init.Datatypes <> None constr
+R5419:5419 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 5487:5506 <> apply_inference_rule
+R5516:5528 opencog.reasoning <> InferenceRule rec
+binder 5509:5512 <> rule:42
+R5538:5555 opencog.reasoning <> CognitiveAtomspace rec
+binder 5532:5534 <> cas:43
+R5560:5577 opencog.reasoning <> CognitiveAtomspace rec
+R5813:5815 opencog.reasoning <> cas:43 var
+def 5897:5923 <> select_high_attention_atoms
+R5932:5949 opencog.reasoning <> CognitiveAtomspace rec
+binder 5926:5928 <> cas:44
+R5961:5963 Coq.Init.Datatypes <> nat ind
+binder 5953:5957 <> limit:45
+R5968:5971 Coq.Init.Datatypes <> list ind
+R5973:5985 opencog.reasoning <> CognitiveAtom rec
+R6015:6020 Coq.Lists.List <> filter def
+R6091:6105 opencog.reasoning <> cognitive_atoms proj
+R6107:6109 opencog.reasoning <> cas:44 var
+binder 6027:6028 <> ca:46
+R6033:6040 Coq.QArith.QArith_base <> Qle_bool def
+R6043:6061 opencog.reasoning <> attention_threshold proj
+R6063:6065 opencog.reasoning <> cas:44 var
+R6069:6071 opencog.reasoning <> sti proj
+R6074:6082 opencog.reasoning <> attention proj
+R6084:6085 opencog.reasoning <> ca:46 var
+binder 5996:6010 <> above_threshold:47
+R6131:6145 opencog.reasoning <> above_threshold:47 var
+binder 6121:6126 <> sorted:48
+R6191:6196 Coq.Lists.List <> firstn def
+R6204:6209 opencog.reasoning <> sorted:48 var
+R6198:6202 opencog.reasoning <> limit:45 var
+def 6263:6275 <> forward_chain
+R6286:6289 Coq.Init.Datatypes <> list ind
+R6291:6303 opencog.reasoning <> InferenceRule rec
+binder 6278:6282 <> rules:49
+R6313:6330 opencog.reasoning <> CognitiveAtomspace rec
+binder 6307:6309 <> cas:50
+R6342:6344 Coq.Init.Datatypes <> nat ind
+binder 6334:6338 <> steps:51
+R6349:6366 opencog.reasoning <> CognitiveAtomspace rec
+R6379:6383 opencog.reasoning <> steps:51 var
+R6394:6394 Coq.Init.Datatypes <> O constr
+R6399:6401 opencog.reasoning <> cas:50 var
+R6407:6407 Coq.Init.Datatypes <> S constr
+R6439:6447 Coq.Lists.List <> fold_left def
+R6511:6513 opencog.reasoning <> cas:50 var
+R6505:6509 opencog.reasoning <> rules:49 var
+binder 6454:6460 <> acc_cas:54
+binder 6462:6465 <> rule:55
+R6470:6489 opencog.reasoning <> apply_inference_rule def
+R6491:6494 opencog.reasoning <> rule:55 var
+R6496:6502 opencog.reasoning <> acc_cas:54 var
+binder 6424:6434 <> updated_cas:56
+R6524:6536 opencog.reasoning <> forward_chain:52 def
+R6544:6554 opencog.reasoning <> updated_cas:56 var
+R6538:6542 opencog.reasoning <> rules:49 var
+def 6630:6643 <> backward_chain
+R6653:6659 syntax.expressions <> Formula ind
+binder 6646:6649 <> goal:57
+R6671:6674 Coq.Init.Datatypes <> list ind
+R6676:6688 opencog.reasoning <> InferenceRule rec
+binder 6663:6667 <> rules:58
+R6698:6715 opencog.reasoning <> CognitiveAtomspace rec
+binder 6692:6694 <> cas:59
+R6720:6725 Coq.Init.Datatypes <> option ind
+R6728:6731 Coq.Init.Datatypes <> list ind
+R6733:6745 opencog.reasoning <> InferenceRule rec
+R6820:6823 Coq.Init.Datatypes <> None constr
+def 6897:6917 <> select_proof_strategy
+R6924:6930 syntax.expressions <> Formula ind
+binder 6920:6920 <> f:60
+R6935:6938 Coq.Init.Datatypes <> list ind
+R6940:6945 Coq.Strings.String <> string ind
+R6958:6958 opencog.reasoning <> f:60 var
+R6969:6975 syntax.expressions <> KFimply constr
+R6984:6984 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R6998:6999 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7016:7016 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7022:7026 syntax.expressions <> KFand constr
+R7035:7035 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7046:7047 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7061:7061 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7067:7070 syntax.expressions <> KFor constr
+R7079:7079 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7089:7090 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7110:7110 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7116:7120 syntax.expressions <> KFbox constr
+R7123:7130 syntax.expressions <> KPassign constr
+R7142:7142 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7161:7162 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7175:7175 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7181:7185 syntax.expressions <> KFbox constr
+R7188:7198 syntax.expressions <> KPodeSystem constr
+R7210:7210 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7235:7236 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7248:7248 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7254:7258 syntax.expressions <> KFbox constr
+R7261:7266 syntax.expressions <> KPloop constr
+R7276:7276 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7293:7294 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7306:7306 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7317:7317 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7330:7331 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7350:7350 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+rec 7408:7416 <> ProofPlan
+proj 7444:7457 <> target_formula
+proj 7472:7486 <> suggested_steps
+proj 7505:7524 <> estimated_difficulty
+proj 7533:7547 <> required_lemmas
+R7461:7467 syntax.expressions <> Formula ind
+R7490:7493 Coq.Init.Datatypes <> list ind
+R7495:7500 Coq.Strings.String <> string ind
+R7528:7528 Coq.QArith.QArith_base <> Q rec
+R7551:7554 Coq.Init.Datatypes <> list ind
+R7556:7562 syntax.expressions <> Formula ind
+def 7639:7657 <> estimate_difficulty
+R7664:7670 syntax.expressions <> Formula ind
+binder 7660:7660 <> f:67
+R7675:7675 Coq.QArith.QArith_base <> Q rec
+R7688:7688 opencog.reasoning <> f:67 var
+R7699:7704 syntax.expressions <> KFtrue constr
+R7708:7714 syntax.expressions <> KFfalse constr
+R7720:7720 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R7720:7720 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R7728:7732 syntax.expressions <> KFand constr
+R7740:7743 syntax.expressions <> KFor constr
+R7751:7757 syntax.expressions <> KFimply constr
+R7773:7777 Coq.QArith.QArith_base <> Qplus def
+R7780:7783 Coq.QArith.QArith_base <> Qdiv def
+R7786:7790 Coq.QArith.QArith_base <> Qplus def
+R7793:7811 opencog.reasoning <> estimate_difficulty:68 def
+R7817:7835 opencog.reasoning <> estimate_difficulty:68 def
+R7846:7846 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R7773:7777 Coq.QArith.QArith_base <> Qplus def
+R7780:7783 Coq.QArith.QArith_base <> Qdiv def
+R7786:7790 Coq.QArith.QArith_base <> Qplus def
+R7793:7811 opencog.reasoning <> estimate_difficulty:68 def
+R7817:7835 opencog.reasoning <> estimate_difficulty:68 def
+R7846:7846 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R7773:7777 Coq.QArith.QArith_base <> Qplus def
+R7780:7783 Coq.QArith.QArith_base <> Qdiv def
+R7786:7790 Coq.QArith.QArith_base <> Qplus def
+R7793:7811 opencog.reasoning <> estimate_difficulty:68 def
+R7817:7835 opencog.reasoning <> estimate_difficulty:68 def
+R7846:7846 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R7854:7858 syntax.expressions <> KFbox constr
+R7871:7875 Coq.QArith.QArith_base <> Qplus def
+R7878:7896 opencog.reasoning <> estimate_difficulty:68 def
+R7907:7907 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R7915:7923 syntax.expressions <> KFdiamond constr
+R7936:7940 Coq.QArith.QArith_base <> Qplus def
+R7943:7961 opencog.reasoning <> estimate_difficulty:68 def
+R7972:7972 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R7986:7986 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 8070:8092 <> extract_required_lemmas
+R8099:8105 syntax.expressions <> Formula ind
+binder 8095:8095 <> f:70
+R8115:8132 opencog.reasoning <> CognitiveAtomspace rec
+binder 8109:8111 <> cas:71
+R8137:8140 Coq.Init.Datatypes <> list ind
+R8142:8148 syntax.expressions <> Formula ind
+R8226:8227 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+def 8294:8312 <> generate_proof_plan
+R8319:8325 syntax.expressions <> Formula ind
+binder 8315:8315 <> f:72
+R8335:8352 opencog.reasoning <> CognitiveAtomspace rec
+binder 8329:8331 <> cas:73
+R8357:8365 opencog.reasoning <> ProofPlan rec
+R8390:8410 opencog.reasoning <> select_proof_strategy def
+R8412:8412 opencog.reasoning <> f:72 var
+binder 8376:8385 <> strategies:74
+R8437:8455 opencog.reasoning <> estimate_difficulty def
+R8457:8457 opencog.reasoning <> f:72 var
+binder 8423:8432 <> difficulty:75
+R8478:8500 opencog.reasoning <> extract_required_lemmas def
+R8502:8502 opencog.reasoning <> f:72 var
+R8504:8506 opencog.reasoning <> cas:73 var
+binder 8468:8473 <> lemmas:76
+R8513:8523 opencog.reasoning <> mkProofPlan constr
+R8525:8525 opencog.reasoning <> f:72 var
+R8527:8536 opencog.reasoning <> strategies:74 var
+R8538:8547 opencog.reasoning <> difficulty:75 var
+R8549:8554 opencog.reasoning <> lemmas:76 var
+def 8624:8639 <> learn_from_proof
+R8656:8659 Coq.Init.Datatypes <> list ind
+R8661:8664 opencog.reasoning <> step ind
+binder 8642:8652 <> proof_steps:77
+R8674:8691 opencog.reasoning <> CognitiveAtomspace rec
+binder 8668:8670 <> cas:78
+R8696:8713 opencog.reasoning <> CognitiveAtomspace rec
+R8809:8811 Coq.Lists.List <> map def
+R8852:8866 opencog.reasoning <> cognitive_atoms proj
+R8868:8870 opencog.reasoning <> cas:78 var
+binder 8818:8819 <> ca:79
+R8824:8839 opencog.reasoning <> update_attention def
+R8841:8842 opencog.reasoning <> ca:79 var
+R8846:8846 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+binder 8792:8804 <> updated_atoms:80
+R8878:8897 opencog.reasoning <> mkCognitiveAtomspace constr
+R8899:8911 opencog.reasoning <> updated_atoms:80 var
+R8914:8930 opencog.reasoning <> next_cognitive_id proj
+R8932:8934 opencog.reasoning <> cas:78 var
+R8938:8938 Coq.Init.Datatypes <> S constr
+R8941:8952 opencog.reasoning <> current_time proj
+R8954:8956 opencog.reasoning <> cas:78 var
+R8961:8979 opencog.reasoning <> attention_threshold proj
+R8981:8983 opencog.reasoning <> cas:78 var
+def 9059:9082 <> init_cognitive_atomspace
+R9086:9103 opencog.reasoning <> CognitiveAtomspace rec
+R9127:9146 opencog.reasoning <> mkCognitiveAtomspace constr
+R9148:9149 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R9157:9157 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+binder 9114:9122 <> empty_cas:81
+R9218:9226 opencog.reasoning <> empty_cas:81 var
+def 9296:9317 <> cognitive_proof_search
+R9327:9333 syntax.expressions <> Formula ind
+binder 9320:9323 <> goal:82
+R9349:9351 Coq.Init.Datatypes <> nat ind
+binder 9337:9345 <> max_depth:83
+R9356:9361 Coq.Init.Datatypes <> option ind
+R9364:9367 Coq.Init.Datatypes <> list ind
+R9369:9372 opencog.reasoning <> step ind
+R9391:9414 opencog.reasoning <> init_cognitive_atomspace def
+binder 9384:9386 <> cas:84
+R9433:9451 opencog.reasoning <> generate_proof_plan def
+R9453:9456 opencog.reasoning <> goal:82 var
+R9458:9460 opencog.reasoning <> cas:84 var
+binder 9425:9428 <> plan:85
+R9516:9519 Coq.Init.Datatypes <> None constr

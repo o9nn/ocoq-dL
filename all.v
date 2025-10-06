@@ -32,3 +32,6 @@ Require Export example1.
 Require Export example2.
 Require Export DI_and.
 Require Export DI_or.
+
+(** OpenCog-Enhanced Cognitive Reasoning System *)
+Require Export opencog.opencog.

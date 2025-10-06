@@ -5,3 +5,4 @@
 -R axioms axioms
 -R checker checker
 -R examples examples
+-R opencog opencog

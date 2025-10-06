@@ -1,0 +1,18 @@
+DIGEST a76f3c5b6f56ff5e9438b77987397840
+Futil.universe
+R1288:1290 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+not 1274:1274 <> :::x_'##'_x
+R1361:1363 Coq.Init.Datatypes <> ::type_scope:x_'+'_x not
+not 1344:1344 <> :::x_'[[+]]'_x
+R1437:1437 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R1439:1441 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R1443:1445 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R1447:1447 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+binder 1438:1438 <> a:1
+not 1418:1418 <> :::'{'_x_':'_x_'$'_x_'}'
+R1504:1506 Coq.Init.Datatypes <> inl constr
+not 1488:1488 <> :::'injL('_x_')'
+R1550:1552 Coq.Init.Datatypes <> inr constr
+not 1534:1534 <> :::'injR('_x_')'
+R1599:1604 Coq.Init.Specif <> existT constr
+not 1580:1580 <> :::'exI('_x_','_x_')'

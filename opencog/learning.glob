@@ -1,0 +1,632 @@
+DIGEST 5d3f023997d733959fb5d6a0350bdd22
+Fopencog.learning
+R198:210 opencog.atoms <> <> lib
+R228:244 opencog.reasoning <> <> lib
+R262:267 Coq.Strings.String <> <> lib
+R285:298 Coq.Lists.List <> <> lib
+R308:325 Coq.Lists.List ListNotations <> mod
+R343:359 Coq.QArith.QArith <> <> lib
+R377:393 Coq.QArith.Qround <> <> lib
+rec 486:497 <> ProofPattern
+proj 528:539 <> pattern_name
+proj 553:567 <> formula_pattern
+proj 582:595 <> proof_template
+proj 612:624 <> success_count
+proj 635:647 <> failure_count
+proj 658:677 <> average_proof_length
+proj 686:704 <> required_conditions
+R543:548 Coq.Strings.String <> string ind
+R571:577 opencog.reasoning <> Pattern ind
+R599:602 Coq.Init.Datatypes <> list ind
+R604:607 opencog.reasoning <> step ind
+R628:630 Coq.Init.Datatypes <> nat ind
+R651:653 Coq.Init.Datatypes <> nat ind
+R681:681 Coq.QArith.QArith_base <> Q rec
+R708:711 Coq.Init.Datatypes <> list ind
+R713:719 syntax.expressions <> Formula ind
+rec 807:819 <> LearningStats
+proj 851:872 <> total_proofs_attempted
+proj 883:899 <> successful_proofs
+proj 910:928 <> patterns_discovered
+proj 939:958 <> avg_proof_complexity
+R876:878 Coq.Init.Datatypes <> nat ind
+R903:905 Coq.Init.Datatypes <> nat ind
+R932:934 Coq.Init.Datatypes <> nat ind
+R962:962 Coq.QArith.QArith_base <> Q rec
+rec 1009:1024 <> CognitiveLearner
+proj 1059:1074 <> learned_patterns
+proj 1099:1112 <> learning_stats
+proj 1133:1149 <> pattern_threshold
+proj 1204:1219 <> exploration_rate
+R1078:1081 Coq.Init.Datatypes <> list ind
+R1083:1094 opencog.learning <> ProofPattern rec
+R1116:1128 opencog.learning <> LearningStats rec
+R1153:1153 Coq.QArith.QArith_base <> Q rec
+R1223:1223 Coq.QArith.QArith_base <> Q rec
+def 1318:1330 <> empty_learner
+R1334:1349 opencog.learning <> CognitiveLearner rec
+R1356:1373 opencog.learning <> mkCognitiveLearner constr
+R1375:1376 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1379:1393 opencog.learning <> mkLearningStats constr
+R1406:1406 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R1412:1412 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 1486:1503 <> formula_to_pattern
+R1510:1516 syntax.expressions <> Formula ind
+binder 1506:1506 <> f:19
+R1521:1527 opencog.reasoning <> Pattern ind
+R1540:1540 opencog.learning <> f:19 var
+R1551:1557 syntax.expressions <> KFimply constr
+R1566:1583 opencog.reasoning <> PatternImplication constr
+R1585:1594 opencog.reasoning <> PatternAny constr
+R1596:1605 opencog.reasoning <> PatternAny constr
+R1611:1615 syntax.expressions <> KFand constr
+R1624:1633 opencog.reasoning <> PatternAnd constr
+R1635:1644 opencog.reasoning <> PatternAny constr
+R1646:1655 opencog.reasoning <> PatternAny constr
+R1661:1664 syntax.expressions <> KFor constr
+R1673:1681 opencog.reasoning <> PatternOr constr
+R1683:1692 opencog.reasoning <> PatternAny constr
+R1694:1703 opencog.reasoning <> PatternAny constr
+R1709:1713 syntax.expressions <> KFbox constr
+R1722:1731 opencog.reasoning <> PatternBox constr
+R1733:1742 opencog.reasoning <> PatternAny constr
+R1744:1753 opencog.reasoning <> PatternAny constr
+R1759:1767 syntax.expressions <> KFdiamond constr
+R1776:1789 opencog.reasoning <> PatternDiamond constr
+R1791:1800 opencog.reasoning <> PatternAny constr
+R1802:1811 opencog.reasoning <> PatternAny constr
+R1822:1831 opencog.reasoning <> PatternAny constr
+def 1906:1925 <> simplify_proof_steps
+R1936:1939 Coq.Init.Datatypes <> list ind
+R1941:1944 opencog.reasoning <> step ind
+binder 1928:1932 <> steps:21
+R1949:1952 Coq.Init.Datatypes <> list ind
+R1954:1957 opencog.reasoning <> step ind
+R1970:1974 opencog.learning <> steps:21 var
+R1985:1986 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1991:1992 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R2022:2025 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1998:2013 opencog.reasoning <> step_placeholder constr
+R2034:2053 opencog.learning <> simplify_proof_steps:22 def
+R2114:2117 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2090:2105 opencog.reasoning <> step_placeholder constr
+R2126:2145 opencog.learning <> simplify_proof_steps:22 def
+R2183:2186 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2196:2199 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2200:2219 opencog.learning <> simplify_proof_steps:22 def
+def 2283:2302 <> pattern_success_rate
+R2310:2321 opencog.learning <> ProofPattern rec
+binder 2305:2306 <> pp:24
+R2326:2326 Coq.QArith.QArith_base <> Q rec
+R2346:2352 Coq.Arith.PeanoNat Nat add def
+R2355:2367 opencog.learning <> success_count proj
+R2369:2370 opencog.learning <> pp:24 var
+R2374:2386 opencog.learning <> failure_count proj
+R2388:2389 opencog.learning <> pp:24 var
+binder 2337:2341 <> total:25
+R2400:2406 Coq.Arith.PeanoNat Nat eqb def
+R2408:2412 opencog.learning <> total:25 var
+R2414:2414 Coq.Init.Datatypes <> O constr
+R2434:2434 Coq.QArith.QArith_base <> ::Q_scope:x_'/'_x not
+R2473:2477 Coq.QArith.QArith_base <> ::Q_scope:x_'/'_x not
+R2503:2503 Coq.QArith.QArith_base <> ::Q_scope:x_'/'_x not
+R2435:2442 Coq.QArith.QArith_base <> inject_Z def
+R2445:2452 Coq.ZArith.BinInt Z of_nat def
+R2455:2467 opencog.learning <> success_count proj
+R2469:2470 opencog.learning <> pp:24 var
+R2478:2485 Coq.QArith.QArith_base <> inject_Z def
+R2488:2495 Coq.ZArith.BinInt Z of_nat def
+R2497:2501 opencog.learning <> total:25 var
+R2423:2423 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 2565:2590 <> extract_pattern_from_proof
+R2597:2603 syntax.expressions <> Formula ind
+binder 2593:2593 <> f:26
+R2615:2618 Coq.Init.Datatypes <> list ind
+R2620:2623 opencog.reasoning <> step ind
+binder 2607:2611 <> proof:27
+R2628:2639 opencog.learning <> ProofPattern rec
+R2661:2678 opencog.learning <> formula_to_pattern def
+R2680:2680 opencog.learning <> f:26 var
+binder 2650:2656 <> pattern:28
+R2711:2730 opencog.learning <> simplify_proof_steps def
+R2732:2736 opencog.learning <> proof:27 var
+binder 2691:2706 <> simplified_proof:29
+R2743:2756 opencog.learning <> mkProofPattern constr
+R2778:2782 Coq.Strings.String <> ::string_scope:x_'++'_x not
+R2816:2816 Coq.Strings.String <> ::string_scope:x_'++'_x not
+R2783:2795 opencog.atoms <> string_of_nat def
+R2798:2808 Coq.Lists.List <> length abbrev
+R2810:2814 opencog.learning <> proof:27 var
+R2823:2829 opencog.learning <> pattern:28 var
+R2835:2850 opencog.learning <> simplified_proof:29 var
+R2927:2934 Coq.QArith.QArith_base <> inject_Z def
+R2937:2944 Coq.ZArith.BinInt Z of_nat def
+R2947:2957 Coq.Lists.List <> length abbrev
+R2959:2963 opencog.learning <> proof:27 var
+R2972:2973 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+def 3076:3093 <> pattern_similarity
+R3104:3110 opencog.reasoning <> Pattern ind
+binder 3096:3097 <> p1:30
+binder 3099:3100 <> p2:31
+R3115:3115 Coq.QArith.QArith_base <> Q rec
+R3132:3133 opencog.learning <> p2:31 var
+R3128:3129 opencog.learning <> p1:30 var
+R3144:3161 opencog.reasoning <> PatternImplication constr
+R3168:3185 opencog.reasoning <> PatternImplication constr
+R3195:3195 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R3203:3212 opencog.reasoning <> PatternAnd constr
+R3219:3228 opencog.reasoning <> PatternAnd constr
+R3238:3238 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R3246:3254 opencog.reasoning <> PatternOr constr
+R3261:3269 opencog.reasoning <> PatternOr constr
+R3279:3279 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R3287:3296 opencog.reasoning <> PatternBox constr
+R3303:3312 opencog.reasoning <> PatternBox constr
+R3322:3322 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R3330:3343 opencog.reasoning <> PatternDiamond constr
+R3350:3363 opencog.reasoning <> PatternDiamond constr
+R3373:3373 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R3381:3390 opencog.reasoning <> PatternAny constr
+R3399:3399 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R3409:3418 opencog.reasoning <> PatternAny constr
+R3424:3424 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R3440:3440 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 3493:3506 <> remove_pattern
+R3518:3529 opencog.learning <> ProofPattern rec
+binder 3509:3514 <> target:34
+R3544:3547 Coq.Init.Datatypes <> list ind
+R3549:3560 opencog.learning <> ProofPattern rec
+binder 3533:3540 <> patterns:35
+R3565:3568 Coq.Init.Datatypes <> list ind
+R3570:3581 opencog.learning <> ProofPattern rec
+R3594:3601 opencog.learning <> patterns:35 var
+R3612:3613 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3618:3619 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3626:3629 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3641:3650 Coq.Strings.String <> string_dec def
+R3653:3664 opencog.learning <> pattern_name proj
+R3670:3681 opencog.learning <> pattern_name proj
+R3683:3688 opencog.learning <> target:34 var
+R3764:3767 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3768:3781 opencog.learning <> remove_pattern:36 def
+R3783:3788 opencog.learning <> target:34 var
+R3714:3727 opencog.learning <> remove_pattern:36 def
+R3729:3734 opencog.learning <> target:34 var
+def 3859:3872 <> update_pattern
+R3880:3891 opencog.learning <> ProofPattern rec
+binder 3875:3876 <> pp:38
+R3905:3908 Coq.Init.Datatypes <> bool ind
+binder 3895:3901 <> success:39
+R3927:3929 Coq.Init.Datatypes <> nat ind
+binder 3912:3923 <> proof_length:40
+R3934:3945 opencog.learning <> ProofPattern rec
+R3974:3980 opencog.learning <> success:39 var
+R4013:4025 opencog.learning <> success_count proj
+R4027:4028 opencog.learning <> pp:38 var
+R3987:3987 Coq.Init.Datatypes <> S constr
+R3990:4002 opencog.learning <> success_count proj
+R4004:4005 opencog.learning <> pp:38 var
+binder 3956:3966 <> new_success:41
+R4057:4063 opencog.learning <> success:39 var
+R4092:4092 Coq.Init.Datatypes <> S constr
+R4095:4107 opencog.learning <> failure_count proj
+R4109:4110 opencog.learning <> pp:38 var
+R4070:4082 opencog.learning <> failure_count proj
+R4084:4085 opencog.learning <> pp:38 var
+binder 4039:4049 <> new_failure:42
+R4138:4144 Coq.Arith.PeanoNat Nat add def
+R4146:4156 opencog.learning <> new_success:41 var
+R4158:4168 opencog.learning <> new_failure:42 var
+binder 4122:4133 <> total_proofs:43
+R4190:4209 opencog.learning <> average_proof_length proj
+R4211:4212 opencog.learning <> pp:38 var
+binder 4179:4185 <> old_avg:44
+R4234:4237 Coq.QArith.QArith_base <> Qdiv def
+R4240:4244 Coq.QArith.QArith_base <> Qplus def
+R4247:4251 Coq.QArith.QArith_base <> Qmult def
+R4253:4259 opencog.learning <> old_avg:44 var
+R4262:4269 Coq.QArith.QArith_base <> inject_Z def
+R4272:4279 Coq.ZArith.BinInt Z of_nat def
+R4282:4289 Coq.Arith.PeanoNat Nat pred def
+R4291:4302 opencog.learning <> total_proofs:43 var
+R4309:4316 Coq.QArith.QArith_base <> inject_Z def
+R4319:4326 Coq.ZArith.BinInt Z of_nat def
+R4328:4339 opencog.learning <> proof_length:40 var
+R4345:4352 Coq.QArith.QArith_base <> inject_Z def
+R4355:4362 Coq.ZArith.BinInt Z of_nat def
+R4364:4375 opencog.learning <> total_proofs:43 var
+binder 4223:4229 <> new_avg:45
+R4384:4397 opencog.learning <> mkProofPattern constr
+R4404:4415 opencog.learning <> pattern_name proj
+R4417:4418 opencog.learning <> pp:38 var
+R4426:4440 opencog.learning <> formula_pattern proj
+R4442:4443 opencog.learning <> pp:38 var
+R4451:4464 opencog.learning <> proof_template proj
+R4466:4467 opencog.learning <> pp:38 var
+R4474:4484 opencog.learning <> new_success:41 var
+R4490:4500 opencog.learning <> new_failure:42 var
+R4506:4512 opencog.learning <> new_avg:45 var
+R4519:4537 opencog.learning <> required_conditions proj
+R4539:4540 opencog.learning <> pp:38 var
+def 4605:4625 <> find_similar_patterns
+R4637:4643 opencog.reasoning <> Pattern ind
+binder 4628:4633 <> target:46
+R4657:4672 opencog.learning <> CognitiveLearner rec
+binder 4647:4653 <> learner:47
+R4677:4680 Coq.Init.Datatypes <> list ind
+R4682:4693 opencog.learning <> ProofPattern rec
+R4700:4705 Coq.Lists.List <> filter def
+R4791:4806 opencog.learning <> learned_patterns proj
+R4808:4814 opencog.learning <> learner:47 var
+binder 4712:4713 <> pp:48
+R4718:4721 Coq.Init.Datatypes <> negb def
+R4724:4731 Coq.QArith.QArith_base <> Qle_bool def
+R4734:4751 opencog.learning <> pattern_similarity def
+R4753:4758 opencog.learning <> target:46 var
+R4761:4775 opencog.learning <> formula_pattern proj
+R4777:4778 opencog.learning <> pp:48 var
+R4784:4784 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 4868:4894 <> learn_from_successful_proof
+R4901:4907 syntax.expressions <> Formula ind
+binder 4897:4897 <> f:49
+R4919:4922 Coq.Init.Datatypes <> list ind
+R4924:4927 opencog.reasoning <> step ind
+binder 4911:4915 <> proof:50
+R4941:4956 opencog.learning <> CognitiveLearner rec
+binder 4931:4937 <> learner:51
+R4961:4976 opencog.learning <> CognitiveLearner rec
+R5002:5027 opencog.learning <> extract_pattern_from_proof def
+R5029:5029 opencog.learning <> f:49 var
+R5031:5035 opencog.learning <> proof:50 var
+binder 4987:4997 <> new_pattern:52
+R5066:5086 opencog.learning <> find_similar_patterns def
+R5089:5103 opencog.learning <> formula_pattern proj
+R5105:5115 opencog.learning <> new_pattern:52 var
+R5118:5124 opencog.learning <> learner:51 var
+binder 5046:5061 <> similar_patterns:53
+R5137:5152 opencog.learning <> similar_patterns:53 var
+R5163:5164 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5244:5248 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5273:5273 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5233:5243 opencog.learning <> new_pattern:52 var
+R5249:5264 opencog.learning <> learned_patterns proj
+R5266:5272 opencog.learning <> learner:51 var
+binder 5213:5228 <> updated_patterns:55
+R5305:5319 opencog.learning <> mkLearningStats constr
+R5330:5330 Coq.Init.Datatypes <> S constr
+R5333:5354 opencog.learning <> total_proofs_attempted proj
+R5357:5370 opencog.learning <> learning_stats proj
+R5372:5378 opencog.learning <> learner:51 var
+R5392:5392 Coq.Init.Datatypes <> S constr
+R5395:5411 opencog.learning <> successful_proofs proj
+R5414:5427 opencog.learning <> learning_stats proj
+R5429:5435 opencog.learning <> learner:51 var
+R5449:5449 Coq.Init.Datatypes <> S constr
+R5452:5470 opencog.learning <> patterns_discovered proj
+R5473:5486 opencog.learning <> learning_stats proj
+R5488:5494 opencog.learning <> learner:51 var
+R5508:5527 opencog.learning <> avg_proof_complexity proj
+R5530:5543 opencog.learning <> learning_stats proj
+R5545:5551 opencog.learning <> learner:51 var
+binder 5288:5300 <> updated_stats:56
+R5564:5581 opencog.learning <> mkCognitiveLearner constr
+R5583:5598 opencog.learning <> updated_patterns:55 var
+R5600:5612 opencog.learning <> updated_stats:56 var
+R5615:5631 opencog.learning <> pattern_threshold proj
+R5633:5639 opencog.learning <> learner:51 var
+R5643:5658 opencog.learning <> exploration_rate proj
+R5660:5666 opencog.learning <> learner:51 var
+R5689:5692 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5771:5784 opencog.learning <> update_pattern def
+R5803:5806 Coq.Init.Datatypes <> true constr
+R5809:5819 Coq.Lists.List <> length abbrev
+R5821:5825 opencog.learning <> proof:50 var
+binder 5752:5766 <> updated_pattern:57
+R5876:5880 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5939:5939 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5861:5875 opencog.learning <> updated_pattern:57 var
+R5881:5894 opencog.learning <> remove_pattern def
+R5914:5929 opencog.learning <> learned_patterns proj
+R5931:5937 opencog.learning <> learner:51 var
+binder 5841:5856 <> updated_patterns:58
+R5971:5985 opencog.learning <> mkLearningStats constr
+R5996:5996 Coq.Init.Datatypes <> S constr
+R5999:6020 opencog.learning <> total_proofs_attempted proj
+R6023:6036 opencog.learning <> learning_stats proj
+R6038:6044 opencog.learning <> learner:51 var
+R6058:6058 Coq.Init.Datatypes <> S constr
+R6061:6077 opencog.learning <> successful_proofs proj
+R6080:6093 opencog.learning <> learning_stats proj
+R6095:6101 opencog.learning <> learner:51 var
+R6115:6133 opencog.learning <> patterns_discovered proj
+R6136:6149 opencog.learning <> learning_stats proj
+R6151:6157 opencog.learning <> learner:51 var
+R6170:6189 opencog.learning <> avg_proof_complexity proj
+R6192:6205 opencog.learning <> learning_stats proj
+R6207:6213 opencog.learning <> learner:51 var
+binder 5954:5966 <> updated_stats:59
+R6226:6243 opencog.learning <> mkCognitiveLearner constr
+R6245:6260 opencog.learning <> updated_patterns:58 var
+R6262:6274 opencog.learning <> updated_stats:59 var
+R6277:6293 opencog.learning <> pattern_threshold proj
+R6295:6301 opencog.learning <> learner:51 var
+R6305:6320 opencog.learning <> exploration_rate proj
+R6322:6328 opencog.learning <> learner:51 var
+def 6392:6414 <> learn_from_failed_proof
+R6421:6427 syntax.expressions <> Formula ind
+binder 6417:6417 <> f:60
+R6449:6452 Coq.Init.Datatypes <> list ind
+R6454:6457 opencog.reasoning <> step ind
+binder 6431:6445 <> attempted_steps:61
+R6471:6486 opencog.learning <> CognitiveLearner rec
+binder 6461:6467 <> learner:62
+R6491:6506 opencog.learning <> CognitiveLearner rec
+R6535:6552 opencog.learning <> formula_to_pattern def
+R6554:6554 opencog.learning <> f:60 var
+binder 6517:6530 <> target_pattern:63
+R6585:6605 opencog.learning <> find_similar_patterns def
+R6607:6620 opencog.learning <> target_pattern:63 var
+R6622:6628 opencog.learning <> learner:62 var
+binder 6565:6580 <> similar_patterns:64
+R6659:6661 Coq.Lists.List <> map def
+R6729:6744 opencog.learning <> similar_patterns:64 var
+binder 6668:6669 <> pp:65
+R6674:6687 opencog.learning <> update_pattern def
+R6689:6690 opencog.learning <> pp:65 var
+R6692:6696 Coq.Init.Datatypes <> false constr
+R6699:6709 Coq.Lists.List <> length abbrev
+R6711:6725 opencog.learning <> attempted_steps:61 var
+binder 6639:6654 <> updated_patterns:66
+R6777:6782 Coq.Lists.List <> filter def
+R6912:6927 opencog.learning <> learned_patterns proj
+R6929:6935 opencog.learning <> learner:62 var
+binder 6789:6790 <> pp:67
+R6795:6798 Coq.Init.Datatypes <> negb def
+R6801:6807 Coq.Lists.List <> existsb def
+R6892:6907 opencog.learning <> updated_patterns:66 var
+binder 6814:6815 <> up:68
+R6823:6832 Coq.Strings.String <> string_dec def
+R6835:6846 opencog.learning <> pattern_name proj
+R6848:6849 opencog.learning <> pp:67 var
+R6853:6864 opencog.learning <> pattern_name proj
+R6866:6867 opencog.learning <> up:68 var
+R6885:6889 Coq.Init.Datatypes <> false constr
+R6875:6878 Coq.Init.Datatypes <> true constr
+binder 6755:6772 <> remaining_patterns:69
+R6979:6982 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R6963:6978 opencog.learning <> updated_patterns:66 var
+R6983:7000 opencog.learning <> remaining_patterns:69 var
+binder 6947:6958 <> all_patterns:70
+R7028:7042 opencog.learning <> mkLearningStats constr
+R7049:7049 Coq.Init.Datatypes <> S constr
+R7052:7073 opencog.learning <> total_proofs_attempted proj
+R7076:7089 opencog.learning <> learning_stats proj
+R7091:7097 opencog.learning <> learner:62 var
+R7107:7123 opencog.learning <> successful_proofs proj
+R7126:7139 opencog.learning <> learning_stats proj
+R7141:7147 opencog.learning <> learner:62 var
+R7156:7174 opencog.learning <> patterns_discovered proj
+R7177:7190 opencog.learning <> learning_stats proj
+R7192:7198 opencog.learning <> learner:62 var
+R7207:7226 opencog.learning <> avg_proof_complexity proj
+R7229:7242 opencog.learning <> learning_stats proj
+R7244:7250 opencog.learning <> learner:62 var
+binder 7011:7023 <> updated_stats:71
+R7259:7276 opencog.learning <> mkCognitiveLearner constr
+R7278:7289 opencog.learning <> all_patterns:70 var
+R7291:7303 opencog.learning <> updated_stats:71 var
+R7306:7322 opencog.learning <> pattern_threshold proj
+R7324:7330 opencog.learning <> learner:62 var
+R7334:7349 opencog.learning <> exploration_rate proj
+R7351:7357 opencog.learning <> learner:62 var
+def 7407:7420 <> prune_patterns
+R7433:7448 opencog.learning <> CognitiveLearner rec
+binder 7423:7429 <> learner:72
+R7453:7468 opencog.learning <> CognitiveLearner rec
+R7501:7506 Coq.Lists.List <> filter def
+R7584:7599 opencog.learning <> learned_patterns proj
+R7601:7607 opencog.learning <> learner:72 var
+binder 7513:7514 <> pp:73
+R7519:7526 Coq.QArith.QArith_base <> Qle_bool def
+R7529:7545 opencog.learning <> pattern_threshold proj
+R7547:7553 opencog.learning <> learner:72 var
+R7557:7576 opencog.learning <> pattern_success_rate def
+R7578:7579 opencog.learning <> pp:73 var
+binder 7479:7496 <> effective_patterns:74
+R7615:7632 opencog.learning <> mkCognitiveLearner constr
+R7634:7651 opencog.learning <> effective_patterns:74 var
+R7654:7667 opencog.learning <> learning_stats proj
+R7669:7675 opencog.learning <> learner:72 var
+R7679:7695 opencog.learning <> pattern_threshold proj
+R7697:7703 opencog.learning <> learner:72 var
+R7707:7722 opencog.learning <> exploration_rate proj
+R7724:7730 opencog.learning <> learner:72 var
+def 7799:7817 <> suggest_proof_steps
+R7824:7830 syntax.expressions <> Formula ind
+binder 7820:7820 <> f:75
+R7844:7859 opencog.learning <> CognitiveLearner rec
+binder 7834:7840 <> learner:76
+R7864:7869 Coq.Init.Datatypes <> option ind
+R7872:7875 Coq.Init.Datatypes <> list ind
+R7877:7880 opencog.reasoning <> step ind
+R7910:7927 opencog.learning <> formula_to_pattern def
+R7929:7929 opencog.learning <> f:75 var
+binder 7892:7905 <> target_pattern:77
+R7960:7980 opencog.learning <> find_similar_patterns def
+R7982:7995 opencog.learning <> target_pattern:77 var
+R7997:8003 opencog.learning <> learner:76 var
+binder 7940:7955 <> similar_patterns:78
+R8031:8046 opencog.learning <> similar_patterns:78 var
+binder 8014:8026 <> best_patterns:79
+R8098:8105 Coq.Lists.List <> rev def
+R8107:8119 opencog.learning <> best_patterns:79 var
+R8130:8131 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R8136:8139 Coq.Init.Datatypes <> None constr
+R8149:8152 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8158:8161 Coq.Init.Datatypes <> Some constr
+R8164:8177 opencog.learning <> proof_template proj
+def 8256:8276 <> adaptive_proof_search
+R8286:8292 syntax.expressions <> Formula ind
+binder 8279:8282 <> goal:80
+R8306:8321 opencog.learning <> CognitiveLearner rec
+binder 8296:8302 <> learner:81
+R8340:8342 Coq.Init.Datatypes <> nat ind
+binder 8325:8336 <> max_attempts:82
+R8347:8352 Coq.Init.Datatypes <> option ind
+R8364:8366 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8355:8358 Coq.Init.Datatypes <> list ind
+R8360:8363 opencog.reasoning <> step ind
+R8367:8382 opencog.learning <> CognitiveLearner rec
+R8396:8414 opencog.learning <> suggest_proof_steps def
+R8416:8419 opencog.learning <> goal:80 var
+R8421:8427 opencog.learning <> learner:81 var
+R8438:8441 Coq.Init.Datatypes <> Some constr
+R8506:8509 Coq.Init.Datatypes <> Some constr
+R8511:8511 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8527:8528 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8536:8536 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8529:8535 opencog.learning <> learner:81 var
+R8590:8593 Coq.Init.Datatypes <> None constr
+R8639:8642 Coq.Init.Datatypes <> None constr
+def 8770:8779 <> meta_learn
+R8792:8807 opencog.learning <> CognitiveLearner rec
+binder 8782:8788 <> learner:83
+R8812:8827 opencog.learning <> CognitiveLearner rec
+R8847:8860 opencog.learning <> learning_stats proj
+R8862:8868 opencog.learning <> learner:83 var
+binder 8838:8842 <> stats:84
+R8898:8904 Coq.Arith.PeanoNat Nat eqb def
+R8907:8928 opencog.learning <> total_proofs_attempted proj
+R8930:8934 opencog.learning <> stats:84 var
+R8937:8937 Coq.Init.Datatypes <> O constr
+R8976:8979 Coq.QArith.QArith_base <> Qdiv def
+R8982:8989 Coq.QArith.QArith_base <> inject_Z def
+R8992:8999 Coq.ZArith.BinInt Z of_nat def
+R9002:9018 opencog.learning <> successful_proofs proj
+R9020:9024 opencog.learning <> stats:84 var
+R9030:9037 Coq.QArith.QArith_base <> inject_Z def
+R9040:9047 Coq.ZArith.BinInt Z of_nat def
+R9050:9071 opencog.learning <> total_proofs_attempted proj
+R9073:9077 opencog.learning <> stats:84 var
+R8946:8946 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+binder 8879:8890 <> success_rate:85
+R9172:9179 Coq.QArith.QArith_base <> Qle_bool def
+R9181:9192 opencog.learning <> success_rate:85 var
+R9196:9196 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R9282:9285 Coq.Init.Datatypes <> negb def
+R9288:9295 Coq.QArith.QArith_base <> Qle_bool def
+R9297:9308 opencog.learning <> success_rate:85 var
+R9312:9312 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R9399:9414 opencog.learning <> exploration_rate proj
+R9416:9422 opencog.learning <> learner:83 var
+R9323:9328 Coq.QArith.QArith_base <> Qminus def
+R9331:9346 opencog.learning <> exploration_rate proj
+R9348:9354 opencog.learning <> learner:83 var
+R9359:9359 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R9205:9209 Coq.QArith.QArith_base <> Qplus def
+R9212:9227 opencog.learning <> exploration_rate proj
+R9229:9235 opencog.learning <> learner:83 var
+R9240:9240 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+binder 9145:9164 <> new_exploration_rate:86
+R9429:9446 opencog.learning <> mkCognitiveLearner constr
+R9449:9464 opencog.learning <> learned_patterns proj
+R9466:9472 opencog.learning <> learner:83 var
+R9475:9479 opencog.learning <> stats:84 var
+R9482:9498 opencog.learning <> pattern_threshold proj
+R9500:9506 opencog.learning <> learner:83 var
+R9509:9528 opencog.learning <> new_exploration_rate:86 var
+def 9595:9609 <> export_patterns
+R9622:9637 opencog.learning <> CognitiveLearner rec
+binder 9612:9618 <> learner:87
+R9642:9645 Coq.Init.Datatypes <> list ind
+R9658:9660 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R9654:9656 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R9648:9653 Coq.Strings.String <> string ind
+R9657:9657 Coq.QArith.QArith_base <> Q rec
+R9661:9663 Coq.Init.Datatypes <> nat ind
+R9671:9673 Coq.Lists.List <> map def
+R9778:9793 opencog.learning <> learned_patterns proj
+R9795:9801 opencog.learning <> learner:87 var
+binder 9680:9681 <> pp:88
+R9686:9686 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9702:9703 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9727:9728 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9774:9774 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9687:9698 opencog.learning <> pattern_name proj
+R9700:9701 opencog.learning <> pp:88 var
+R9704:9723 opencog.learning <> pattern_success_rate def
+R9725:9726 opencog.learning <> pp:88 var
+R9729:9735 Coq.Arith.PeanoNat Nat add def
+R9738:9750 opencog.learning <> success_count proj
+R9752:9753 opencog.learning <> pp:88 var
+R9757:9769 opencog.learning <> failure_count proj
+R9771:9772 opencog.learning <> pp:88 var
+def 9854:9873 <> load_common_patterns
+R9877:9880 Coq.Init.Datatypes <> list ind
+R9882:9893 opencog.learning <> ProofPattern rec
+R9900:9935 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10099:10139 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10260:10263 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9936:9949 opencog.learning <> mkProofPattern constr
+R9974:9991 opencog.reasoning <> PatternImplication constr
+R9993:10002 opencog.reasoning <> PatternAny constr
+R10004:10013 opencog.reasoning <> PatternAny constr
+R10022:10022 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10053:10054 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10084:10084 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10023:10038 opencog.reasoning <> step_placeholder constr
+R10055:10070 opencog.reasoning <> step_placeholder constr
+R10093:10093 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R10097:10098 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R10140:10153 opencog.learning <> mkProofPattern constr
+R10178:10187 opencog.reasoning <> PatternAnd constr
+R10189:10198 opencog.reasoning <> PatternAny constr
+R10200:10209 opencog.reasoning <> PatternAny constr
+R10218:10218 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R10246:10246 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R10219:10234 opencog.reasoning <> step_placeholder constr
+R10254:10254 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R10258:10259 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+def 10325:10350 <> init_learner_with_patterns
+R10354:10369 opencog.learning <> CognitiveLearner rec
+R10392:10411 opencog.learning <> load_common_patterns def
+binder 10380:10387 <> patterns:89
+R10431:10445 opencog.learning <> mkLearningStats constr
+R10452:10462 Coq.Lists.List <> length abbrev
+R10464:10471 opencog.learning <> patterns:89 var
+binder 10422:10426 <> stats:90
+R10481:10498 opencog.learning <> mkCognitiveLearner constr
+R10500:10507 opencog.learning <> patterns:89 var
+R10509:10513 opencog.learning <> stats:90 var
+R10517:10517 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R10523:10523 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 10570:10588 <> continuous_learning
+R10599:10602 Coq.Init.Datatypes <> list ind
+R10604:10610 syntax.expressions <> Formula ind
+binder 10591:10595 <> goals:91
+R10624:10639 opencog.learning <> CognitiveLearner rec
+binder 10614:10620 <> learner:92
+R10644:10659 opencog.learning <> CognitiveLearner rec
+R10672:10676 opencog.learning <> goals:91 var
+R10687:10688 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R10693:10699 opencog.learning <> learner:92 var
+R10709:10712 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R10739:10759 opencog.learning <> adaptive_proof_search def
+R10766:10772 opencog.learning <> learner:92 var
+R10789:10792 Coq.Init.Datatypes <> Some constr
+R10794:10794 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10806:10807 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10823:10823 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10859:10885 opencog.learning <> learn_from_successful_proof def
+binder 10842:10854 <> final_learner:95
+R10933:10951 opencog.learning <> continuous_learning:93 def
+R10965:10974 opencog.learning <> meta_learn def
+R10976:10988 opencog.learning <> final_learner:95 var
+R10999:11002 Coq.Init.Datatypes <> None constr
+R11039:11061 opencog.learning <> learn_from_failed_proof def
+R11068:11069 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R11071:11077 opencog.learning <> learner:92 var
+binder 11021:11034 <> failed_learner:96
+R11092:11110 opencog.learning <> continuous_learning:93 def
+R11124:11133 opencog.learning <> meta_learn def
+R11135:11148 opencog.learning <> failed_learner:96 var
